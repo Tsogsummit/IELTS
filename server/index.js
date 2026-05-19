@@ -170,7 +170,7 @@ function sampleTests() {
       type: "listening",
       duration: 40,
       ...scheduleWindow("14:10", "14:50"),
-      audioUrl: "",
+      audioUrl: "https://practicepteonline.com/wp-content/uploads/audio/203_we.mp3?_=1",
       createdAt: now(),
       sections: [
         { title: "Part 1: Furniture Rental Companies", instructions: "Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer." },
