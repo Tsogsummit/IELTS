@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 850" role="img" aria-labelledby="title desc">
+  <title id="title">Bidcaster Archaeological Dig Map</title>
+  <desc id="desc">A labelled map of the Bidcaster Archaeological Dig with castle walls, river, information boards, current dig site, compass and labels A to G.</desc>
+  <rect width="980" height="850" fill="#f7f2eb"/>
+  <text x="490" y="32" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700">Bidcaster Archaeological Dig</text>
+  <rect x="40" y="60" width="900" height="760" fill="#eee8df" stroke="#202020" stroke-width="3"/>
+
+  <path d="M175 70 C260 135 390 138 520 132 C680 123 775 165 862 300 C900 360 910 470 912 600" fill="none" stroke="#202020" stroke-width="4"/>
+  <path d="M130 110 C250 205 395 185 530 180 C684 172 770 205 845 320 C885 384 890 498 890 600" fill="none" stroke="#202020" stroke-width="4"/>
+  <text x="355" y="158" font-family="Arial" font-size="32" fill="#222">River</text>
+  <text x="740" y="220" transform="rotate(42 740 220)" font-family="Arial" font-size="30" fill="#222">River</text>
+  <g stroke="#202020" stroke-width="2" fill="none">
+    <path d="M210 86 l8 8 l8 -4 l8 9"/><path d="M270 130 l8 8 l8 -4 l8 9"/><path d="M495 145 l8 8 l8 -4 l8 9"/>
+    <path d="M610 145 l8 8 l8 -4 l8 9"/><path d="M785 245 l8 8 l8 -4 l8 9"/><path d="M870 420 l8 8 l8 -4 l8 9"/>
+    <path d="M875 500 l8 8 l8 -4 l8 9"/><path d="M890 540 l8 8 l8 -4 l8 9"/>
+  </g>
+
+  <path d="M92 255 L195 360 L195 502 L90 610" fill="none" stroke="#202020" stroke-width="5"/>
+  <text x="118" y="430" font-family="Arial" font-size="31" fill="#333">Castle</text>
+  <text x="128" y="462" font-family="Arial" font-size="31" fill="#333">walls</text>
+
+  <path d="M245 275 C210 310 207 374 215 470 C222 565 300 600 420 592 L520 586 L520 660" fill="none" stroke="#202020" stroke-width="4"/>
+  <path d="M245 275 C245 205 285 205 430 207 C515 207 533 210 545 255 C535 275 535 292 560 310 L560 640 L245 640 C210 620 202 586 202 500 L202 365 C202 325 218 300 245 275Z" fill="none" stroke="#202020" stroke-width="4"/>
+  <path d="M268 295 C286 268 300 266 430 266 C515 266 520 280 525 300" fill="none" stroke="#202020" stroke-width="4"/>
+  <path d="M566 315 C625 315 665 280 655 210 L706 210 C735 310 735 485 686 555 C657 590 620 600 568 592 Z" fill="none" stroke="#202020" stroke-width="4"/>
+  <path d="M545 590 L545 660" stroke="#202020" stroke-width="4"/>
+
+  <g font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#111">
+    <rect x="176" y="220" width="64" height="48" fill="none" stroke="#202020" stroke-width="3"/><text x="208" y="255">A</text>
+    <rect x="400" y="170" width="60" height="46" fill="none" stroke="#202020" stroke-width="3"/><text x="430" y="204">B</text>
+    <rect x="632" y="194" width="55" height="45" fill="none" stroke="#202020" stroke-width="3"/><text x="660" y="228">C</text>
+    <rect x="458" y="365" width="46" height="72" fill="none" stroke="#202020" stroke-width="3"/><text x="481" y="412">D</text>
+    <rect x="715" y="385" width="48" height="42" fill="none" stroke="#202020" stroke-width="3"/><text x="739" y="417">E</text>
+    <rect x="164" y="585" width="64" height="46" fill="none" stroke="#202020" stroke-width="3"/><text x="196" y="620">F</text>
+    <rect x="285" y="478" width="104" height="104" fill="none" stroke="#202020" stroke-width="3"/><text x="337" y="542">G</text>
+  </g>
+  <rect x="407" y="555" width="105" height="101" fill="none" stroke="#202020" stroke-width="3"/>
+  <text x="445" y="592" font-family="Arial" font-size="29">Site of</text>
+  <text x="440" y="626" font-family="Arial" font-size="29">current</text>
+  <text x="455" y="660" font-family="Arial" font-size="29">dig</text>
+  <rect x="310" y="392" width="86" height="40" fill="none" stroke="#202020" stroke-width="3"/>
+  <rect x="580" y="540" width="35" height="35" fill="none" stroke="#202020" stroke-width="3"/>
+
+  <g stroke="#202020" stroke-width="3" fill="none">
+    <g transform="translate(160 295)"><rect x="0" y="0" width="42" height="30"/><path d="M0 0 L42 30 M42 0 L0 30"/><line x1="-5" y1="-2" x2="-5" y2="35"/><line x1="47" y1="-2" x2="47" y2="35"/></g>
+    <g transform="translate(245 365)"><rect x="0" y="0" width="42" height="30"/><path d="M0 0 L42 30 M42 0 L0 30"/><line x1="-5" y1="-2" x2="-5" y2="35"/><line x1="47" y1="-2" x2="47" y2="35"/></g>
+    <g transform="translate(460 325)"><rect x="0" y="0" width="42" height="30"/><path d="M0 0 L42 30 M42 0 L0 30"/><line x1="-5" y1="-2" x2="-5" y2="35"/><line x1="47" y1="-2" x2="47" y2="35"/></g>
+    <g transform="translate(575 625)"><rect x="0" y="0" width="42" height="30"/><path d="M0 0 L42 30 M42 0 L0 30"/><line x1="-5" y1="-2" x2="-5" y2="35"/><line x1="47" y1="-2" x2="47" y2="35"/></g>
+  </g>
+
+  <g fill="#eee8df" stroke="#202020" stroke-width="3">
+    <path d="M120 142 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M72 194 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M528 198 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M574 240 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M702 292 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M754 305 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M805 360 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M718 438 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M772 420 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M590 348 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M634 398 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+    <path d="M600 470 c-28 4 -33 38 -10 50 c-8 25 18 40 34 22 c15 15 38 2 33 -20 c24 -6 21 -38 -2 -44 c0 -28 -37 -32 -48 -8Z"/>
+  </g>
+  <g stroke="#202020" stroke-width="3">
+    <line x1="142" y1="216" x2="132" y2="274"/><line x1="142" y1="216" x2="152" y2="274"/>
+    <line x1="94" y1="268" x2="84" y2="326"/><line x1="94" y1="268" x2="104" y2="326"/>
+    <line x1="550" y1="270" x2="540" y2="325"/><line x1="550" y1="270" x2="560" y2="325"/>
+    <line x1="598" y1="312" x2="588" y2="367"/><line x1="598" y1="312" x2="608" y2="367"/>
+    <line x1="726" y1="364" x2="716" y2="418"/><line x1="726" y1="364" x2="736" y2="418"/>
+    <line x1="778" y1="377" x2="768" y2="431"/><line x1="778" y1="377" x2="788" y2="431"/>
+    <line x1="830" y1="432" x2="820" y2="486"/><line x1="830" y1="432" x2="840" y2="486"/>
+    <line x1="742" y1="510" x2="732" y2="562"/><line x1="742" y1="510" x2="752" y2="562"/>
+    <line x1="796" y1="490" x2="786" y2="542"/><line x1="796" y1="490" x2="806" y2="542"/>
+    <line x1="614" y1="420" x2="604" y2="474"/><line x1="614" y1="420" x2="624" y2="474"/>
+    <line x1="658" y1="470" x2="648" y2="524"/><line x1="658" y1="470" x2="668" y2="524"/>
+    <line x1="624" y1="542" x2="614" y2="595"/><line x1="624" y1="542" x2="634" y2="595"/>
+  </g>
+
+  <rect x="74" y="735" width="240" height="75" fill="none" stroke="#202020" stroke-width="3"/>
+  <g transform="translate(96 765)" stroke="#202020" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="42" height="30"/><path d="M0 0 L42 30 M42 0 L0 30"/><line x1="-5" y1="-2" x2="-5" y2="35"/><line x1="47" y1="-2" x2="47" y2="35"/>
+  </g>
+  <text x="160" y="790" font-family="Arial" font-size="30">Information</text>
+  <text x="188" y="822" font-family="Arial" font-size="30">boards</text>
+
+  <rect x="540" y="724" width="32" height="32" fill="#202020"/>
+  <path d="M556 755 L556 800" stroke="#202020" stroke-width="5"/><path d="M556 755 L542 780 M556 755 L570 780" stroke="#202020" stroke-width="5" fill="none"/>
+  <text x="508" y="814" font-family="Arial" font-size="29">You are</text>
+  <text x="520" y="845" font-family="Arial" font-size="29">here</text>
+  <g font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" stroke="#202020" fill="#202020">
+    <line x1="770" y1="700" x2="770" y2="770" stroke-width="3"/><line x1="735" y1="735" x2="805" y2="735" stroke-width="3"/>
+    <path d="M770 700 l-7 16 h14z"/><path d="M770 770 l-7 -16 h14z"/><path d="M735 735 l16 -7 v14z"/><path d="M805 735 l-16 -7 v14z"/>
+    <text x="770" y="690">N</text><text x="770" y="795">S</text><text x="720" y="742">W</text><text x="820" y="742">E</text>
+  </g>
+</svg>

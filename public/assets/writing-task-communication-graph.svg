@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+  <title id="title">Communication Methods Line Graph</title>
+  <desc id="desc">Percentage of people who used five communication methods between 1998 and 2008.</desc>
+  <rect width="960" height="680" fill="#ffffff"/>
+  <text x="480" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1b1b1b">
+    The line graph shows the percentage of people
+  </text>
+  <text x="480" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1b1b1b">
+    who used five different communication
+  </text>
+  <text x="480" y="154" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1b1b1b">
+    methods between 1998 and 2008.
+  </text>
+
+  <g transform="translate(110 205)" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#333">
+    <line x1="0" y1="390" x2="760" y2="390" stroke="#c6cbd2" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="390" stroke="#d6dee9" stroke-width="2"/>
+
+    <g fill="#333" text-anchor="end">
+      <text x="-16" y="395">0</text>
+      <text x="-16" y="339">10</text>
+      <text x="-16" y="283">20</text>
+      <text x="-16" y="227">30</text>
+      <text x="-16" y="171">40</text>
+      <text x="-16" y="115">50</text>
+      <text x="-16" y="59">60</text>
+      <text x="-16" y="3">70</text>
+    </g>
+
+    <g fill="#333" text-anchor="middle">
+      <text x="70" y="425">1998</text>
+      <text x="198" y="425">2000</text>
+      <text x="326" y="425">2002</text>
+      <text x="454" y="425">2004</text>
+      <text x="582" y="425">2006</text>
+      <text x="710" y="425">2008</text>
+    </g>
+
+    <polyline fill="none" stroke="#5b9bd5" stroke-width="3" points="70,306 198,295 326,298 454,289 582,295 710,306"/>
+    <polyline fill="none" stroke="#ed7d31" stroke-width="3" points="70,356 198,323 326,289 454,250 582,167 710,56"/>
+    <polyline fill="none" stroke="#a5a5a5" stroke-width="3" points="70,362 198,356 326,350 454,334 582,300 710,289"/>
+    <polyline fill="none" stroke="#ffc000" stroke-width="3" points="70,390 198,390 326,390 454,384 582,367 710,362"/>
+    <polyline fill="none" stroke="#4472c4" stroke-width="3" points="70,390 198,390 326,390 454,388 582,379 710,367"/>
+
+    <g fill="#5b9bd5" stroke="#5b9bd5">
+      <circle cx="70" cy="306" r="5"/><circle cx="198" cy="295" r="5"/><circle cx="326" cy="298" r="5"/>
+      <circle cx="454" cy="289" r="5"/><circle cx="582" cy="295" r="5"/><circle cx="710" cy="306" r="5"/>
+    </g>
+    <g fill="#ed7d31" stroke="#ed7d31">
+      <rect x="64" y="350" width="12" height="12"/><rect x="192" y="317" width="12" height="12"/><rect x="320" y="283" width="12" height="12"/>
+      <rect x="448" y="244" width="12" height="12"/><rect x="576" y="161" width="12" height="12"/><rect x="704" y="50" width="12" height="12"/>
+    </g>
+    <g fill="#a5a5a5" stroke="#a5a5a5">
+      <polygon points="70,354 62,370 78,370"/><polygon points="198,348 190,364 206,364"/><polygon points="326,342 318,358 334,358"/>
+      <polygon points="454,326 446,342 462,342"/><polygon points="582,292 574,308 590,308"/><polygon points="710,281 702,297 718,297"/>
+    </g>
+    <g stroke="#ffc000" stroke-width="3">
+      <line x1="64" y1="390" x2="76" y2="390"/><line x1="70" y1="384" x2="70" y2="396"/>
+      <line x1="192" y1="390" x2="204" y2="390"/><line x1="198" y1="384" x2="198" y2="396"/>
+      <line x1="320" y1="390" x2="332" y2="390"/><line x1="326" y1="384" x2="326" y2="396"/>
+      <line x1="448" y1="384" x2="460" y2="384"/><line x1="454" y1="378" x2="454" y2="390"/>
+      <line x1="576" y1="367" x2="588" y2="367"/><line x1="582" y1="361" x2="582" y2="373"/>
+      <line x1="704" y1="362" x2="716" y2="362"/><line x1="710" y1="356" x2="710" y2="368"/>
+    </g>
+    <g stroke="#4472c4" stroke-width="3">
+      <line x1="64" y1="384" x2="76" y2="396"/><line x1="76" y1="384" x2="64" y2="396"/>
+      <line x1="192" y1="384" x2="204" y2="396"/><line x1="204" y1="384" x2="192" y2="396"/>
+      <line x1="320" y1="384" x2="332" y2="396"/><line x1="332" y1="384" x2="320" y2="396"/>
+      <line x1="448" y1="382" x2="460" y2="394"/><line x1="460" y1="382" x2="448" y2="394"/>
+      <line x1="576" y1="373" x2="588" y2="385"/><line x1="588" y1="373" x2="576" y2="385"/>
+      <line x1="704" y1="361" x2="716" y2="373"/><line x1="716" y1="361" x2="704" y2="373"/>
+    </g>
+
+    <g transform="translate(70 458)" font-size="17" font-weight="700">
+      <line x1="0" y1="0" x2="38" y2="0" stroke="#5b9bd5" stroke-width="3"/><circle cx="19" cy="0" r="5" fill="#5b9bd5"/>
+      <text x="48" y="6">Landline service</text>
+      <line x1="250" y1="0" x2="288" y2="0" stroke="#ed7d31" stroke-width="3"/><rect x="263" y="-6" width="12" height="12" fill="#ed7d31"/>
+      <text x="298" y="6">Cellular phone service</text>
+      <line x1="520" y1="0" x2="558" y2="0" stroke="#a5a5a5" stroke-width="3"/><polygon points="539,-8 531,8 547,8" fill="#a5a5a5"/>
+      <text x="568" y="6">Internet service</text>
+      <line x1="0" y1="38" x2="38" y2="38" stroke="#ffc000" stroke-width="3"/><line x1="19" y1="31" x2="19" y2="45" stroke="#ffc000" stroke-width="3"/>
+      <text x="48" y="44">Fixed broadband</text>
+      <line x1="250" y1="38" x2="288" y2="38" stroke="#4472c4" stroke-width="3"/><line x1="263" y1="31" x2="275" y2="45" stroke="#4472c4" stroke-width="3"/><line x1="275" y1="31" x2="263" y2="45" stroke="#4472c4" stroke-width="3"/>
+      <text x="298" y="44">Mobile broadband</text>
+    </g>
+  </g>
+</svg>
