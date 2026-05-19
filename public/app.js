@@ -160,7 +160,7 @@ function TestList({ go }) {
         h("span", { className: "badge" }, test.type.replace("_", " ")),
         h("h3", { style: { marginTop: 12 } }, test.title),
         h("p", null, `${test.duration} minutes · ${test.questionCount || "Practice"} questions`),
-        test.startsAt && h("div", { className: "schedule-box" },
+        test.scheduleStatus?.scheduled && test.startsAt && h("div", { className: "schedule-box" },
           h("strong", null, "Official test window"),
           h("span", null, `Starts: ${formatDateTime(test.startsAt)}`),
           h("span", null, `Ends: ${formatDateTime(test.endsAt)}`),
@@ -183,17 +183,17 @@ function scheduleLabel(status) {
   return "Closed";
 }
 
-function Timer({ minutes, endsAt, onEnd }) {
-  const initialLeft = endsAt ? Math.max(0, Math.ceil((new Date(endsAt).getTime() - Date.now()) / 1000)) : minutes * 60;
+function Timer({ minutes, onEnd }) {
+  const initialLeft = minutes * 60;
   const [left, setLeft] = useState(initialLeft);
   useEffect(() => {
     const t = setInterval(() => setLeft((v) => {
-      const next = endsAt ? Math.max(0, Math.ceil((new Date(endsAt).getTime() - Date.now()) / 1000)) : v - 1;
+      const next = v - 1;
       if (next <= 0) { clearInterval(t); onEnd?.(); return 0; }
       return next;
     }), 1000);
     return () => clearInterval(t);
-  }, [endsAt]);
+  }, [minutes]);
   return h("div", { className: "timer" }, `${String(Math.floor(left / 60)).padStart(2, "0")}:${String(left % 60).padStart(2, "0")}`);
 }
 
@@ -221,7 +221,7 @@ function TestRunner({ testId, go }) {
 
   const questions = test.questions || [];
   return h(React.Fragment, null,
-    h("div", { className: "exam-top" }, h("div", { className: "shell" }, h("div", null, h("strong", null, test.title), test.endsAt && h("div", { className: "muted" }, `Ends at ${formatDateTime(test.endsAt)}`)), h(Timer, { minutes: test.duration, endsAt: test.endsAt, onEnd: submit }))),
+    h("div", { className: "exam-top" }, h("div", { className: "shell" }, h("div", null, h("strong", null, test.title), h("div", { className: "muted" }, `${test.duration} minute timer`)), h(Timer, { minutes: test.duration, onEnd: submit }))),
     h("div", { className: "shell" },
       test.type === "reading" && h(ReadingView, { test, questions, answers, setAnswers, index, setIndex }),
       test.type === "listening" && h(ListeningView, { test, questions, answers, setAnswers, index, setIndex }),
@@ -253,7 +253,7 @@ function ListeningView(props) {
 function ReadingView(props) {
   return h("div", { className: "split" },
     h("div", { className: "card passage" }, h("h3", null, props.test.passageTitle), props.test.passage),
-    h("div", { className: "exam-layout", style: { gridTemplateColumns: "150px 1fr" } }, h(Navigator, props), h(QuestionCard, props))
+    h("div", { className: "exam-layout" }, h(Navigator, props), h(QuestionCard, props))
   );
 }
 

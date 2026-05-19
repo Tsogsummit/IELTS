@@ -123,30 +123,12 @@ function bandFromRaw(score) {
   return Math.max(0, Math.round((score / 40) * 4 * 2) / 2);
 }
 
-function scheduleWindow(startTime, endTime) {
-  return {
-    startsAt: `${EXAM_DATE}T${startTime}:00${EXAM_TZ_OFFSET}`,
-    endsAt: `${EXAM_DATE}T${endTime}:00${EXAM_TZ_OFFSET}`
-  };
-}
-
 function scheduledStatus(test) {
-  if (!test.startsAt || !test.endsAt) return { scheduled: false, available: true };
-  const current = Date.now();
-  const start = new Date(test.startsAt).getTime();
-  const end = new Date(test.endsAt).getTime();
-  return {
-    scheduled: true,
-    available: current >= start && current < end,
-    notStarted: current < start,
-    ended: current >= end,
-    secondsUntilStart: Math.max(0, Math.ceil((start - current) / 1000)),
-    secondsUntilEnd: Math.max(0, Math.ceil((end - current) / 1000))
-  };
+  return { scheduled: false, available: true };
 }
 
 function canBypassSchedule(user) {
-  return ["super_admin", "admin"].includes(user.role) || String(user.className || "").toUpperCase() === "TEST";
+  return true;
 }
 
 function roundIeltsAverage(scores) {
@@ -297,13 +279,12 @@ function sampleTests() {
       id: listeningId,
       title: "IELTS Listening Mock 1",
       type: "listening",
-      duration: 35,
-      ...scheduleWindow("14:55", "15:30"),
+      duration: 40,
       audioUrl: "https://practicepteonline.com/wp-content/uploads/audio/203_we.mp3?_=1",
       createdAt: now(),
       sections: [
         { title: "Part 1: Furniture Rental Companies", instructions: "Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer." },
-        { title: "Part 2: Bidcaster Community Archaeology Project", instructions: "Choose the correct letter, A, B, or C. Use the Bidcaster Archaeological Dig map for the map-label questions.", image: "/assets/bidcaster-archaeological-dig.svg" },
+        { title: "Part 2: Bidcaster Community Archaeology Project", instructions: "Choose the correct letter, A, B, or C. Use the Bidcaster Archaeological Dig map for the map-label questions.", image: "/assets/bidcaster.png" },
         { title: "Part 3: Project on Theatre Programmes", instructions: "Choose the correct letter, A, B, or C." },
         { title: "Part 4: Inclusive Design", instructions: "Complete the notes. Write ONE WORD ONLY for each answer." }
       ],
@@ -355,7 +336,6 @@ function sampleTests() {
       title: "IELTS Reading Mock 1",
       type: "reading",
       duration: 60,
-      ...scheduleWindow("15:40", "16:40"),
       passageTitle: "IELTS Reading Mock 1",
       passage: readingPassageText(),
       createdAt: now(),
@@ -366,9 +346,8 @@ function sampleTests() {
       title: "IELTS Writing Mock 1",
       type: "writing",
       duration: 60,
-      ...scheduleWindow("16:50", "17:50"),
       task1: "The line graph shows the percentage of people who used five different communication methods between 1998 and 2008. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-      task1Image: "/assets/writing-task-communication-graph.svg",
+      task1Image: "/assets/graph.png",
       task2: "Many manufactured food and drink products contain high levels of sugar, which causes many health problems. Sugary products should be made more expensive to encourage people to consume less sugar. To what extent do you agree or disagree?",
       createdAt: now(),
       questions: []
@@ -397,7 +376,8 @@ function seedDb() {
   const users = [
     staff("Super Admin", "superadmin", "SuperAdmin123", "super_admin"),
     staff("Academic Admin", "admin", "Admin1234", "admin"),
-    staff("Default Grader", "grader", "Grader1234", "grader")
+    staff("Default Grader", "grader", "Grader1234", "grader"),
+    staff("Teacher Test User", "teacher_test", "Teacher1234", "grader")
   ];
   const classes = new Set();
   if (fs.existsSync(STUDENT_CSV)) {

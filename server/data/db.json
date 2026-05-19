@@ -1167,6 +1167,22 @@
       "isActive": true,
       "createdAt": "2026-05-19T03:49:50.216Z",
       "updatedAt": "2026-05-19T03:49:50.216Z"
+    },
+    {
+      "id": "usr_teacher_test",
+      "name": "Teacher Test User",
+      "username": "teacher_test",
+      "email": "",
+      "passwordHash": "acce196dc3ed76548299e034c94b4f31:2714c97359853bb700607cd6978a31ea4e35e7b5ec08fbb6f7fb978c39dfa8370e98b77b831e60bb6997079801d7ab8da3232a5f298695fdd20bdb91308f67f6",
+      "temporaryPassword": null,
+      "mustChangePassword": false,
+      "role": "grader",
+      "className": "",
+      "phone": "",
+      "parentName": "",
+      "isActive": true,
+      "createdAt": "2026-05-19T07:17:32.056Z",
+      "updatedAt": "2026-05-19T07:20:41.644Z"
     }
   ],
   "studentClasses": [
@@ -1194,7 +1210,7 @@
       "id": "test_listening_1",
       "title": "IELTS Listening Mock 1",
       "type": "listening",
-      "duration": 35,
+      "duration": 40,
       "audioUrl": "https://practicepteonline.com/wp-content/uploads/audio/203_we.mp3?_=1",
       "createdAt": "2026-05-19T02:41:03.851Z",
       "sections": [
@@ -1205,7 +1221,7 @@
         {
           "title": "Part 2: Bidcaster Community Archaeology Project",
           "instructions": "Choose the correct letter, A, B, or C. Use the Bidcaster Archaeological Dig map for the map-label questions.",
-          "image": "/assets/bidcaster-archaeological-dig.svg"
+          "image": "/assets/bidcaster.png"
         },
         {
           "title": "Part 3: Project on Theatre Programmes",
@@ -1733,9 +1749,7 @@
           "correctAnswer": "temperature",
           "explanation": "Workplace comfort issue."
         }
-      ],
-      "startsAt": "2026-05-19T14:55:00+08:00",
-      "endsAt": "2026-05-19T15:30:00+08:00"
+      ]
     },
     {
       "id": "test_reading_1",
@@ -2345,9 +2359,7 @@
           "correctAnswer": "C. recommending a change of approach in how people view them",
           "explanation": "Richardson says different understandings need to be brought together."
         }
-      ],
-      "startsAt": "2026-05-19T15:40:00+08:00",
-      "endsAt": "2026-05-19T16:40:00+08:00"
+      ]
     },
     {
       "id": "test_writing_1",
@@ -2358,9 +2370,7 @@
       "task2": "Many manufactured food and drink products contain high levels of sugar, which causes many health problems. Sugary products should be made more expensive to encourage people to consume less sugar. To what extent do you agree or disagree?",
       "createdAt": "2026-05-19T02:41:03.851Z",
       "questions": [],
-      "task1Image": "/assets/writing-task-communication-graph.svg",
-      "startsAt": "2026-05-19T16:50:00+08:00",
-      "endsAt": "2026-05-19T17:50:00+08:00"
+      "task1Image": "/assets/graph.png"
     },
     {
       "id": "test_speaking_1",

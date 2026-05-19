@@ -82,9 +82,9 @@ th { background: var(--soft); color: var(--navy); font-size: 13px; }
 .exam-top { position: sticky; top: 62px; z-index: 10; background: white; border-bottom: 1px solid var(--line); }
 .exam-top .shell { padding-top: 12px; padding-bottom: 12px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .timer { background: var(--navy); color: white; border-radius: 7px; padding: 10px 12px; font-weight: 850; min-width: 96px; text-align: center; }
-.exam-layout { display: grid; grid-template-columns: 210px 1fr; gap: 18px; }
-.question-nav { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; }
-.question-nav button { height: 34px; border: 1px solid var(--line); background: white; border-radius: 7px; font-weight: 800; color: var(--navy); }
+.exam-layout { display: grid; grid-template-columns: minmax(280px, 320px) minmax(0, 1fr); gap: 18px; }
+.question-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); gap: 8px; }
+.question-nav button { height: 44px; min-width: 44px; border: 1px solid var(--line); background: white; border-radius: 7px; font-weight: 800; color: var(--navy); }
 .question-nav button.active { background: var(--navy); color: white; }
 .question-nav button.answered { border-color: var(--green); }
 .question-card { display: grid; gap: 14px; }
