@@ -158,6 +158,135 @@ function roundIeltsAverage(scores) {
   return whole + 1;
 }
 
+function readingPassageText() {
+  return `READING PASSAGE 1
+
+Frozen Food
+A US perspective on the development of the frozen food industry
+
+At some point in history, humans discovered that ice preserved food. There is evidence that winter ice was stored to preserve food in the summer as far back as 10,000 years ago. Two thousand years ago, the inhabitants of South America's Andean mountains had a unique means of conserving potatoes for later consumption. They froze them overnight, then trampled them to squeeze out the moisture, then dried them in the sun. This preserved their nutritional value - if not their aesthetic appeal.
+
+Natural ice remained the main form of refrigeration until late in the 19th century. In the early 1800s, ship owners from Boston, USA, had enormous blocks of Arctic ice towed all over the Atlantic for the purpose of food preservation. In 1851, railroads first began putting blocks of ice in insulated rail cars to send butter from Ogdensburg, New York, to Boston.
+
+Finally, in 1870, Australian inventors found a way to make 'mechanical ice'. They used a compressor to force a gas - ammonia at first and later Freon - through a condenser. The compressed gas gave up some of its heat as it moved through the condenser. Then the gas was released quickly into a low-pressure evaporator coil where it became liquid and cold. Air was blown over the evaporator coil and then this cooled air passed into an insulated compartment, lowering its temperature to freezing point.
+
+Initially, this process was invented to keep Australian beer cool even in hot weather. But Australian cattlemen were quick to realize that, if they could put this new invention on a ship, they could export meat across the oceans. In 1880, a shipment of Australian beef and mutton was sent, frozen, to England. While the food frozen this way was still palatable, there was some deterioration. During the freezing process, crystals formed within the cells of the food, and when the ice expanded and the cells burst, this spoilt the flavor and texture of the food.
+
+The modern frozen food industry began with the indigenous Inuit people of Canada. In 1912, a biology student in Massachusetts, USA, named Clarence Birdseye, ran out of money and went to Labrador in Canada to trap and trade furs. While he was there, he became fascinated with how the Inuit would quickly freeze fish in the Arctic air. The fish looked and tasted fresh even months later.
+
+Birdseye returned to the USA in 1917 and began developing mechanical freezers capable of quick-freezing food. Birdseye methodically kept inventing better freezers and gradually built a business selling frozen fish from Gloucester, Massachusetts. In 1929, his business was sold and became General Foods, but he stayed with the company as director of research, and his division continued to innovate.
+
+Birdseye was responsible for several key innovations that made the frozen food industry possible. He developed quick-freezing techniques that reduced the damage that crystals caused, as well as the technique of freezing the product in the package it was to be sold in. He also introduced the use of cellophane, the first transparent material for food packaging, which allowed consumers to see the quality of the product. Birdseye products also came in convenient size packages that could be prepared with a minimum of effort.
+
+But there were still obstacles. In the 1930s, few grocery stores could afford to buy freezers for a market that was not established yet. So, Birdseye leased inexpensive freezer cases to them. He also leased insulated railroad cars so that he could ship his products nationwide. However, few consumers had freezers large enough or efficient enough to take advantage of the products.
+
+Sales increased in the early 1940s, when World War II gave a boost to the frozen food industry because tin was being used for munitions. Canned foods were rationed to save tin for the war effort, while frozen foods were abundant and cheap. Finally, by the 1950s, refrigerator technology had developed far enough to make these appliances affordable for the average family. By 1953, 33 million US families owned a refrigerator, and manufacturers were gradually increasing the size of the freezer compartments in them.
+
+1950s families were also looking for convenience at mealtimes, so the moment was right for the arrival of the TV Dinner. Swanson Foods was a large, nationally recognized producer of canned and frozen poultry. In 1954, the company adapted some of Birdseye's freezing techniques, and with the help of a clever name and a huge advertising budget, it launched the first TV Dinner. This consisted of frozen turkey, potatoes and vegetables served in the same segmented aluminum tray that was used by airlines. The product was an instant success. Within a year, Swanson had sold 13 million TV dinners. American consumers could not resist the combination of a trusted brand name, a single-serving package and the convenience of a meal that could be ready after only 25 minutes in a hot oven. By 1959, Americans were spending $2.7 billion annually on frozen foods, and half a billion of that was spent on ready-prepared meals such as the TV Dinner.
+
+Today, the US frozen food industry has a turnover of over $67 billion annually, with $26.6 billion of that sold to consumers for home consumption. The remaining $40 billion in frozen food sales come through restaurants, cafeterias, hospitals and schools, and that represents a third of the total food service sales.
+
+READING PASSAGE 2
+
+Can the planet's coral reefs be saved?
+
+A Conservationists have put the final touches to a giant artificial reef they have been assembling at the world-renowned Zoological Society of London (London Zoo). Samples of the planet's most spectacular corals - vivid green branching coral, yellow scroll, blue ridge and many more species have been added to the giant tank along with fish that thrive in their presence: blue tang, clownfish and many others. The reef is in the zoo's new gallery, Tiny Giants, which is dedicated to the minuscule invertebrate creatures that sustain life across the planet. The coral reef tank and its seven-metre-wide window form the core of the exhibition.
+
+'Coral reefs are the most diverse ecosystems on Earth and we want to show people how wonderful they are,' said Paul Pearce-Kelly, senior curator of invertebrates and fish at the Zoological Society of London. 'However, we also want to highlight the research and conservation efforts that are now being carried out to try to save them from the threat of global warming.' They want people to see what is being done to try to save these wonders.
+
+B Corals are composed of tiny animals, known as polyps, with tentacles for capturing small marine creatures in the sea water. These polyps are transparent but get their brilliant tones of pink, orange, blue, green, etc. from algae that live within them, which in turn get protection, while their photosynthesising of the sun's rays provides nutrients for the polyps. This comfortable symbiotic relationship has led to the growth of coral reefs that cover 0.1% of the planet's ocean bed while providing homes for more than 25% of marine species, including fish, molluscs, sponges and shellfish.
+
+C As a result, coral reefs are often described as the 'rainforests of the sea', though the comparison is dismissed by some naturalists, including David Attenborough. 'People say you cannot beat the rainforest,' Attenborough has stated. 'But that is simply not true. You go there and the first thing you think is: where are the birds? Where are the animals? They are hiding in the trees, of course. No, if you want beauty and wildlife, you want a coral reef. Put on a mask and stick your head under the water. The sight is mind-blowing.'
+
+D Unfortunately, these majestic sights are now under very serious threat, with the most immediate problem coming in the form of thermal stress. Rising ocean temperatures are triggering bleaching events that strip reefs of their colour and eventually kill them. And that is just the start. Other menaces include ocean acidification, sea level increase, pollution by humans, deoxygenation and ocean current changes, while the climate crisis is also increasing habitat destruction. As a result, vast areas including massive chunks of Australia's Great Barrier Reef have already been destroyed, and scientists advise that more than 90% of reefs could be lost by 2050 unless urgent action is taken to tackle global heating and greenhouse gas emissions.
+
+Pearce-Kelly says that coral reefs have to survive really harsh conditions, wave erosion and other factors. And 'when things start to go wrong in the oceans, then corals will be the first to react. And that is exactly what we are seeing now. Coral reefs are dying and they are telling us that all is not well with our planet.'
+
+E However, scientists are trying to pinpoint hardy types of coral that could survive our overheated oceans, and some of this research will be carried out at London Zoo. 'Behind our coral reef tank we have built laboratories where scientists will be studying coral species,' said Pearce-Kelly. One aim will be to carry out research on species to find those that can survive best in warm, acidic waters. Another will be to try to increase coral breeding rates. 'Coral spawn just once a year,' he added. 'However, aquarium-based research has enabled some corals to spawn artificially, which can assist coral reef restoration efforts. And if this can be extended for all species, we could consider the launching of coral-spawning programmes several times a year. That would be a big help in restoring blighted reefs.'
+
+F Research in these fields is being conducted in laboratories around the world, with the London Zoo centre linked to this global network. Studies carried out in one centre can then be tested in others. The resulting young coral can then be displayed in the tank in Tiny Giants. 'The crucial point is that the progress we make in making coral better able to survive in a warming world can be shown to the public and encourage them to believe that we can do something to save the planet's reefs,' said Pearce-Kelly. 'Saving our coral reefs is now a critically important ecological goal.'
+
+READING PASSAGE 3
+
+Robots and us
+
+Three leaders in their fields answer questions about our relationships with robots.
+
+When asked 'Should robots be used to colonise other planets?', cosmology and astrophysics Professor Martin Rees said he believed the solar system would be mapped by robotic craft by the end of the century. 'The next step would be mining of asteroids, enabling fabrication of large structures in space without having to bring all the raw materials from Earth... I think this is more realistic and benign than the terraforming of planets.' He maintains that colonised planets 'should be preserved with a status that is analogous to Antarctica here on Earth.'
+
+On the question of using robots to colonise other planets and exploit mineral resources, engineering Professor Daniel Wolpert replied, 'I do not see a pressing need to colonise other planets unless we can bring these resources back to Earth. The vast majority of Earth is currently inaccessible to us. Using robots to gather resources nearer to home would seem to be a better use of our robotic tools.'
+
+Meanwhile, for anthropology Professor Kathleen Richardson, the idea of 'colonisation' of other planets seemed morally dubious: 'I think whether we do something on Earth or on Mars we should always do it in the spirit of a genuine interest in the Other, not to impose a particular model, but to meet the Other.'
+
+In response to the second question, 'How soon will machine intelligence outstrip human intelligence?', Rees mentions robots that are advanced enough to beat humans at chess, but then goes on to say, 'Robots are still limited in their ability to sense their environment: they cannot yet recognise and move the pieces on a real chessboard as cleverly as a child can. Later this century, however, their more advanced successors may relate to their surroundings, and to people, as adeptly as we do. Moral questions then arise. Should we feel guilty about exploiting sophisticated robots? Should we fret if they are underemployed, frustrated, or bored?'
+
+Wolpert's response to the question about machine intelligence outstripping human intelligence was this: 'In a limited sense it already has. Machines can already navigate, remember and search for items with an ability that far outstrips humans. However, there is no machine that can identify visual objects or speech with the reliability and flexibility of humans. Expecting a machine close to the creative intelligence of a human within the next 50 years would be highly ambitious.'
+
+Richardson believes that our fear of machines becoming too advanced has more to do with human nature than anything intrinsic to the machines themselves. In her view, it stems from humans' tendency to personify inanimate objects: we create machines based on representations of ourselves, imagine that machines think and behave as we do, and therefore see them as an autonomous threat. 'One of the consequences of thinking that the problem lies with machines is that we tend to imagine they are greater and more powerful than they really are and subsequently they become so.'
+
+This led on to the third question, 'Should we be scared by advances in artificial intelligence?' To this question, Rees replied, 'Those who should be worried are the futurologists who believe in the so-called singularity. And another worry is that we are increasingly dependent on computer networks, and that these could behave like a single brain with a mind of its own, and with goals that may be contrary to human welfare. I think we should ensure that robots remain as no more than idiot savants lacking the capacity to outwit us, even though they may greatly surpass us in the ability to calculate and process information.'
+
+Wolpert's response was to say that we have already seen the damaging effects of artificial intelligence in the form of computer viruses. 'But in this case,' he says, 'the real intelligence is the malicious designer. Critically, the benefits of computers outweigh the damage that computer viruses cause. Similarly, while there may be misuses of robotics in the near future, the benefits that they will bring are likely to outweigh these negative aspects.'
+
+Richardson's response to this question was this: 'We need to ask why fears of artificial intelligence and robots persist; none have in fact risen up and challenged human supremacy.' She believes that as robots have never shown themselves to be a threat to humans, it seems unlikely that they ever will. In fact, she went on, 'Not all fear robots; many people welcome machine intelligence.'
+
+In answer to the fourth question, 'What can science fiction tell us about robotics?', Rees replied, 'I sometimes advise students that it is better to read first-rate science fiction than second-rate science - more stimulating, and perhaps no more likely to be wrong.'
+
+As his response, Wolpert commented, 'Science fiction has often been remarkable at predicting the future. Science fiction has painted a vivid spectrum of possible futures, from cute and helpful robots to dystopian robotic societies. Interestingly, almost no science fiction envisages a future without robots.'
+
+Finally, on the question of science fiction, Richardson pointed out that in modern society, people tend to think there is reality on the one hand, and fiction and fantasy on the other. She then explained that the division did not always exist, and that scientists and technologists made this separation because they wanted to carve out the sphere of their work. 'But the divide is not so clear cut, and that is why the worlds seem to collide at times,' she said. 'In some cases, we need to bring these different understandings together to get a whole perspective. Perhaps then, we will not be so frightened that something we create as a copy of ourselves will be a threat to us.'`;
+}
+
+function readingQuestions(readingId) {
+  const headings = ["i. Tried and tested solutions", "ii. cooperation beneath the waves", "iii. working to lessen the problems", "iv. disagreement about the accuracy of a certain phrase", "v. two clear educational goals", "vi. promoting hope", "vii. A warning of further trouble ahead"];
+  const causes = ["A. a rising number of extreme storms", "B. the removal of too many fish from the sea", "C. the contamination of the sea from waste", "D. increased disease among marine species", "E. alterations in the usual flow of water in the seas"];
+  const zoo = ["A. They are hoping to expand the numbers of different corals being bred in laboratories", "B. They want to identify corals that can cope well with the changed sea conditions", "C. They are looking at ways of creating artificial reefs that corals could grow on", "D. They are trying out methods that would speed up reproduction in some corals", "E. They are investigating materials that might protect reefs from higher temperatures"];
+  const experts = ["A. Martin Rees", "B. Daniel Wolpert", "C. Kathleen Richardson"];
+  const endings = ["A. robots to explore outer space", "B. advances made in machine intelligence so far", "C. changes made to other planets for our own benefit", "D. the harm already done by artificial intelligence"];
+  return [
+    q(readingId, 1, 1, "Passage 1: People conserved the nutritional value of ____ using a method of freezing then drying.", "blank", [], "potatoes", "The Andean method preserved potatoes."),
+    q(readingId, 1, 2, "Passage 1: ____ was kept cool by ice during transportation in specially adapted trains.", "blank", [], "butter", "Butter was sent in insulated rail cars."),
+    q(readingId, 1, 3, "Passage 1: Two kinds of ____ were the first frozen food shipped to England.", "blank", [], "meat", "Beef and mutton are two kinds of meat."),
+    q(readingId, 1, 4, "Passage 1: Quick-freezing methods meant ____ did not spoil the food.", "blank", [], "crystals", "Quick freezing reduced damage caused by crystals."),
+    q(readingId, 1, 5, "Passage 1: Birdseye packaged products with ____ so the product was visible.", "blank", [], "cellophane", "Cellophane was transparent packaging."),
+    q(readingId, 1, 6, "Passage 1: Frozen food became popular because of a shortage of ____.", "blank", [], "tin", "Tin was needed for munitions."),
+    q(readingId, 1, 7, "Passage 1: In the 1950s, a large number of homes now had a ____.", "blank", [], "refrigerator", "Many US families owned a refrigerator."),
+    q(readingId, 1, 8, "Passage 1: The ice transportation business made some Boston ship owners very wealthy in the early 1800s.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "NOT GIVEN", "The passage does not say whether they became wealthy."),
+    q(readingId, 1, 9, "Passage 1: A disadvantage of the freezing process invented in Australia was that it affected the taste of food.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "TRUE", "The passage says the process spoilt flavor and texture."),
+    q(readingId, 1, 10, "Passage 1: Clarence Birdseye travelled to Labrador in order to learn how the Inuit people froze fish.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "FALSE", "He went to trap and trade furs."),
+    q(readingId, 1, 11, "Passage 1: Swanson Foods invested a great deal of money in the promotion of the TV Dinner.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "TRUE", "The passage mentions a huge advertising budget."),
+    q(readingId, 1, 12, "Passage 1: Swanson Foods developed a new style of container for the launch of the TV Dinner.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "FALSE", "The tray was the same type used by airlines."),
+    q(readingId, 1, 13, "Passage 1: The US frozen food industry is currently the largest in the world.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "NOT GIVEN", "The passage gives turnover figures but no global comparison."),
+    q(readingId, 2, 14, "Passage 2: Choose the correct heading for Section A.", "mcq", headings, "v. two clear educational goals", "The section describes showing reef beauty and highlighting conservation."),
+    q(readingId, 2, 15, "Passage 2: Choose the correct heading for Section B.", "mcq", headings, "ii. cooperation beneath the waves", "The section explains the symbiotic relationship between corals and algae."),
+    q(readingId, 2, 16, "Passage 2: Choose the correct heading for Section C.", "mcq", headings, "iv. disagreement about the accuracy of a certain phrase", "The section discusses the disputed phrase rainforests of the sea."),
+    q(readingId, 2, 17, "Passage 2: Choose the correct heading for Section D.", "mcq", headings, "vii. A warning of further trouble ahead", "The section warns of reef loss by 2050."),
+    q(readingId, 2, 18, "Passage 2: Choose the correct heading for Section E.", "mcq", headings, "iii. working to lessen the problems", "The section describes research to help reefs survive."),
+    q(readingId, 2, 19, "Passage 2: Choose the correct heading for Section F.", "mcq", headings, "vi. promoting hope", "The section says progress can encourage public hope."),
+    q(readingId, 2, 20, "Passage 2: Which TWO causes of damage to coral reefs are mentioned? Write both letters, e.g. C, E.", "blank", causes, "C, E", "Pollution by humans and ocean current changes are mentioned."),
+    q(readingId, 2, 21, "Passage 2: Which TWO causes of damage to coral reefs are mentioned? Write the same two letters as Question 20.", "blank", causes, "C, E", "This pair completes Questions 20 and 21."),
+    q(readingId, 2, 22, "Passage 2: Which TWO statements are true of the researchers at London Zoo? Write both letters, e.g. B, D.", "blank", zoo, "B, D", "They want to identify hardy corals and increase breeding rates."),
+    q(readingId, 2, 23, "Passage 2: Which TWO statements are true of the researchers at London Zoo? Write the same two letters as Question 22.", "blank", zoo, "B, D", "This pair completes Questions 22 and 23."),
+    q(readingId, 2, 24, "Passage 2: Corals have a number of ____ which they use to collect their food.", "blank", [], "tentacles", "Polyps have tentacles for capturing food."),
+    q(readingId, 2, 25, "Passage 2: Algae gain ____ from being inside the coral.", "blank", [], "protection", "The algae get protection from the coral."),
+    q(readingId, 2, 26, "Passage 2: Increases in the warmth of the sea water can remove the ____ from coral.", "blank", [], "colour", "Bleaching strips reefs of their colour."),
+    q(readingId, 3, 27, "Passage 3: For our own safety, humans will need to restrict the abilities of robots.", "mcq", experts, "A. Martin Rees", "Rees says robots should lack the capacity to outwit us."),
+    q(readingId, 3, 28, "Passage 3: The risk of robots harming us is less serious than humans believe it to be.", "mcq", experts, "C. Kathleen Richardson", "Richardson says robots have not shown themselves to be a threat."),
+    q(readingId, 3, 29, "Passage 3: It will take many decades for robot intelligence to be as imaginative as human intelligence.", "mcq", experts, "B. Daniel Wolpert", "Wolpert says human-level creative intelligence within 50 years is highly ambitious."),
+    q(readingId, 3, 30, "Passage 3: We may have to start considering whether we are treating robots fairly.", "mcq", experts, "A. Martin Rees", "Rees raises moral questions about exploiting sophisticated robots."),
+    q(readingId, 3, 31, "Passage 3: Robots are probably of more help to us on Earth than in space.", "mcq", experts, "B. Daniel Wolpert", "Wolpert says gathering resources nearer to home is a better use."),
+    q(readingId, 3, 32, "Passage 3: High-quality science fiction may be just as accurate as mediocre scientists.", "mcq", experts, "A. Martin Rees", "Rees recommends first-rate science fiction over second-rate science."),
+    q(readingId, 3, 33, "Passage 3: There are those who look forward to robots developing greater intelligence.", "mcq", experts, "C. Kathleen Richardson", "Richardson says many people welcome machine intelligence."),
+    q(readingId, 3, 34, "Passage 3: Richardson and Rees express similar views regarding the ethical aspect of...", "mcq", endings, "C. changes made to other planets for our own benefit", "Both raise ethical concerns about changing or imposing on other planets."),
+    q(readingId, 3, 35, "Passage 3: Rees and Wolpert share an opinion about the extent of...", "mcq", endings, "B. advances made in machine intelligence so far", "Both identify current limits of machine intelligence."),
+    q(readingId, 3, 36, "Passage 3: Wolpert disagrees with Richardson on the question of...", "mcq", endings, "D. the harm already done by artificial intelligence", "Wolpert cites computer viruses; Richardson says robots have not challenged humans."),
+    q(readingId, 3, 37, "Passage 3: What point does Richardson make about fear of machines?", "mcq", ["A. It has grown alongside the development of ever more advanced robots", "B. It is the result of our inclination to attribute human characteristics to non-human entities", "C. It has its origins in basic misunderstandings about how inanimate objects function", "D. It demonstrates a key difference between human intelligence and machine intelligence"], "B. It is the result of our inclination to attribute human characteristics to non-human entities", "Richardson refers to personifying inanimate objects."),
+    q(readingId, 3, 38, "Passage 3: What potential advance does Rees see as a cause for concern?", "mcq", ["A. robots outnumbering people", "B. robots having abilities which humans do not", "C. artificial intelligence developing independent thought", "D. artificial intelligence taking over every aspect of our lives"], "C. artificial intelligence developing independent thought", "Rees worries about a network behaving like a brain with its own goals."),
+    q(readingId, 3, 39, "Passage 3: What does Wolpert emphasise in his response to the question about science fiction?", "mcq", ["A. how science fiction influences our attitudes to robots", "B. how fundamental robots are to the science fiction genre", "C. how the image of robots in science fiction has changed over time", "D. how reactions to similar portrayals of robots in science fiction may vary"], "B. how fundamental robots are to the science fiction genre", "Wolpert says almost no science fiction imagines a future without robots."),
+    q(readingId, 3, 40, "Passage 3: What is Richardson doing in her comment about reality and fantasy?", "mcq", ["A. warning people not to confuse one with the other", "B. outlining ways in which one has impacted on the other", "C. recommending a change of approach in how people view them", "D. explaining why scientists have a different perspective on them from other people"], "C. recommending a change of approach in how people view them", "Richardson says different understandings need to be brought together.")
+  ];
+}
+
 function sampleTests() {
   const listeningId = "test_listening_1";
   const readingId = "test_reading_1";
@@ -168,8 +297,8 @@ function sampleTests() {
       id: listeningId,
       title: "IELTS Listening Mock 1",
       type: "listening",
-      duration: 40,
-      ...scheduleWindow("14:10", "14:50"),
+      duration: 35,
+      ...scheduleWindow("14:55", "15:30"),
       audioUrl: "https://practicepteonline.com/wp-content/uploads/audio/203_we.mp3?_=1",
       createdAt: now(),
       sections: [
@@ -179,16 +308,46 @@ function sampleTests() {
         { title: "Part 4: Inclusive Design", instructions: "Complete the notes. Write ONE WORD ONLY for each answer." }
       ],
       questions: [
-        q(listeningId, 1, 1, "Prices range from $105 to ____ per month.", "blank", [], "240", "The note asks for the maximum monthly rental price."),
-        q(listeningId, 1, 2, "The furniture is very ____.", "blank", [], "modern", "The adjective describes the furniture quality."),
-        q(listeningId, 1, 3, "Free ____ with every living room set.", "blank", [], "delivery", "The special offer concerns delivery."),
-        q(listeningId, 1, 4, "Company name: ____ and Oliver.", "blank", [], "Smith", "The company name completes the note."),
-        q(listeningId, 1, 5, "12% monthly fee for ____.", "blank", [], "insurance", "The monthly fee is for insurance."),
-        q(listeningId, 1, 6, "Cheapest prices for renting furniture and ____ items.", "blank", [], "electrical", "The category is electrical items."),
-        q(listeningId, 1, 7, "Must have own ____.", "blank", [], "transport", "Customers need transport."),
-        q(listeningId, 1, 8, "____ Rentals.", "blank", [], "City", "The company name is City Rentals."),
-        q(listeningId, 1, 9, "See the ____ for the most up-to-date prices.", "blank", [], "website", "Prices are updated online."),
-        q(listeningId, 1, 10, "____ are allowed within 7 days of delivery.", "blank", [], "exchanges", "The policy allows exchanges.")
+        q(listeningId, 1, 1, "Part 1: Prices range from $105 to ____ per month.", "blank", [], "239", "Furniture rental price range."),
+        q(listeningId, 1, 2, "Part 1: The furniture is very ____.", "blank", [], "modern", "Furniture description."),
+        q(listeningId, 1, 3, "Part 1: Free ____ with every living room set.", "blank", [], "lamp", "Special offer item."),
+        q(listeningId, 1, 4, "Part 1: Company name: ____ and Oliver.", "blank", [], "Aaron", "Company name."),
+        q(listeningId, 1, 5, "Part 1: 12% monthly fee for ____.", "blank", [], "damage", "Monthly fee covers damage."),
+        q(listeningId, 1, 6, "Part 1: Cheapest prices for renting furniture and ____ items.", "blank", [], "electronic", "Item category."),
+        q(listeningId, 1, 7, "Part 1: Must have own ____.", "blank", [], "insurance", "Customer requirement."),
+        q(listeningId, 1, 8, "Part 1: ____ Rentals.", "blank", [], "Space", "Company name."),
+        q(listeningId, 1, 9, "Part 1: See the ____ for the most up-to-date prices.", "blank", [], "app", "Where prices are updated."),
+        q(listeningId, 1, 10, "Part 1: ____ are allowed within 7 days of delivery.", "blank", [], "exchanges", "Delivery policy."),
+        q(listeningId, 2, 11, "Part 2: Who was responsible for starting the community project?", "mcq", ["A. The castle owners", "B. A national charity", "C. The local council"], "B. A national charity", "Project origin."),
+        q(listeningId, 2, 12, "Part 2: How was the gold coin found?", "mcq", ["A. Heavy rain had removed some of the soil", "B. The ground was dug up by wild rabbits", "C. A person with a metal detector searched the area"], "A. Heavy rain had removed some of the soil", "Discovery method."),
+        q(listeningId, 2, 13, "Part 2: What led archaeologists to believe there was an ancient village on this site?", "mcq", ["A. The lucky discovery of old records", "B. The bases of several structures visible in the grass", "C. The unusual stones found near the castle"], "A. The lucky discovery of old records", "Evidence for the village."),
+        q(listeningId, 2, 14, "Part 2: What are the team still hoping to find?", "mcq", ["A. Everyday pottery", "B. Animal bones", "C. Pieces of jewellery"], "C. Pieces of jewellery", "Remaining target find."),
+        q(listeningId, 2, 15, "Part 2: What was found on the other side of the river to the castle?", "mcq", ["A. The remains of a large palace", "B. The outline of fields", "C. A number of small huts"], "B. The outline of fields", "Find across the river."),
+        q(listeningId, 2, 16, "Part 2: What do the team plan to do after work ends this summer?", "mcq", ["A. Prepare a display for a museum", "B. Take part in a television programme", "C. Start to organize school visits"], "C. Start to organize school visits", "Next planned activity."),
+        q(listeningId, 2, 17, "Part 2 map: Bridge foundations. Write the correct letter A-G.", "blank", [], "B", "Map label."),
+        q(listeningId, 2, 18, "Part 2 map: Rubbish pit. Write the correct letter A-G.", "blank", [], "A", "Map label."),
+        q(listeningId, 2, 19, "Part 2 map: Meeting hall. Write the correct letter A-G.", "blank", [], "G", "Map label."),
+        q(listeningId, 2, 20, "Part 2 map: Fish pond. Write the correct letter A-G.", "blank", [], "E", "Map label."),
+        q(listeningId, 3, 21, "Part 3: Finn was pleased to discover that their topic...", "mcq", ["A. was not familiar to their module leader", "B. had not been chosen by other students", "C. did not prove to be difficult to research"], "B. had not been chosen by other students", "Theatre programmes project."),
+        q(listeningId, 3, 22, "Part 3: Maya says a mistaken belief about theatre programmes is that...", "mcq", ["A. theatres pay companies to produce them", "B. few theatre-goers buy them nowadays", "C. they contain far more adverts than previously"], "A. theatres pay companies to produce them", "Common misconception."),
+        q(listeningId, 3, 23, "Part 3: Finn was surprised that, in early British theatre, programmes...", "mcq", ["A. were difficult for audiences to obtain", "B. were given out free of charge", "C. were seen as a kind of contract"], "C. were seen as a kind of contract", "Historical role."),
+        q(listeningId, 3, 24, "Part 3: Maya feels their project should explain why companies of actors...", "mcq", ["A. promoted their own plays", "B. performed plays outdoors", "C. had to tour with their plays"], "A. promoted their own plays", "Project explanation."),
+        q(listeningId, 3, 25, "Part 3: Compared to nineteenth-century programmes, eighteenth-century programmes were...", "mcq", ["A. more original", "B. more colourful", "C. more informative"], "C. more informative", "Comparison."),
+        q(listeningId, 3, 26, "Part 3: Maya does not fully understand why, in the twentieth century...", "mcq", ["A. very few theatre programmes were printed in the USA", "B. British theatre programmes failed to develop for so long", "C. theatre programmes in Britain copied fashions from the USA"], "B. British theatre programmes failed to develop for so long", "Twentieth-century issue."),
+        q(listeningId, 3, 27, "Part 3 shows: Ruy Blas. Choose the comment A-F.", "mcq", ["A. Its origin is somewhat controversial", "B. It is historically significant for a country", "C. It was effective at attracting audiences", "D. It is included in a recent project", "E. It contains insights into the show", "F. It resembles an artwork"], "F. It resembles an artwork", "Programme comment."),
+        q(listeningId, 3, 28, "Part 3 shows: Man of La Mancha. Choose the comment A-F.", "mcq", ["A. Its origin is somewhat controversial", "B. It is historically significant for a country", "C. It was effective at attracting audiences", "D. It is included in a recent project", "E. It contains insights into the show", "F. It resembles an artwork"], "E. It contains insights into the show", "Programme comment."),
+        q(listeningId, 3, 29, "Part 3 shows: The Tragedy of Jane Shore. Choose the comment A-F.", "mcq", ["A. Its origin is somewhat controversial", "B. It is historically significant for a country", "C. It was effective at attracting audiences", "D. It is included in a recent project", "E. It contains insights into the show", "F. It resembles an artwork"], "B. It is historically significant for a country", "Programme comment."),
+        q(listeningId, 3, 30, "Part 3 shows: The Sailors' Festival. Choose the comment A-F.", "mcq", ["A. Its origin is somewhat controversial", "B. It is historically significant for a country", "C. It was effective at attracting audiences", "D. It is included in a recent project", "E. It contains insights into the show", "F. It resembles an artwork"], "D. It is included in a recent project", "Programme comment."),
+        q(listeningId, 4, 31, "Part 4: Products can be accessed without the need for any ____.", "blank", [], "adaptation", "Definition of inclusive design."),
+        q(listeningId, 4, 32, "Part 4: Universal design includes catering for people with ____ problems.", "blank", [], "cognitive", "Universal design scope."),
+        q(listeningId, 4, 33, "Part 4: ____ which are adjustable, avoiding back or neck problems.", "blank", [], "desks", "Adjustable workplace item."),
+        q(listeningId, 4, 34, "Part 4: ____ in public toilets which are easier to use.", "blank", [], "taps", "Public toilet design."),
+        q(listeningId, 4, 35, "Part 4: Designers avoid using ____ in interfaces.", "blank", [], "blue", "Interface colour."),
+        q(listeningId, 4, 36, "Part 4: People can make commands using a mouse, keyboard or their ____.", "blank", [], "voice", "Input method."),
+        q(listeningId, 4, 37, "Part 4: Seat belts are especially problematic for ____ women.", "blank", [], "pregnant", "Safety concern."),
+        q(listeningId, 4, 38, "Part 4: PPE jackets are often unsuitable because of the size of women's ____.", "blank", [], "shoulders", "PPE fit issue."),
+        q(listeningId, 4, 39, "Part 4: PPE for female ____ officers dealing with emergencies is the worst.", "blank", [], "police", "Emergency service role."),
+        q(listeningId, 4, 40, "Part 4: The ____ in offices is often too low for women.", "blank", [], "temperature", "Workplace comfort issue.")
       ]
     },
     {
@@ -196,29 +355,18 @@ function sampleTests() {
       title: "IELTS Reading Mock 1",
       type: "reading",
       duration: 60,
-      ...scheduleWindow("15:00", "16:00"),
-      passageTitle: "Frozen Food",
-      passage: `A US perspective on the development of the frozen food industry.\n\nAt some point in history, humans discovered that ice preserved food. Two thousand years ago, the inhabitants of South America's Andean mountains conserved potatoes by freezing them overnight, trampling them to squeeze out moisture, then drying them in the sun.\n\nNatural ice remained the main form of refrigeration until late in the 19th century. In 1851, railroads began putting blocks of ice in insulated rail cars to send butter from Ogdensburg, New York, to Boston.\n\nIn 1870, Australian inventors found a way to make mechanical ice. Cattlemen realized this invention could export meat across oceans. In 1880, Australian beef and mutton was sent frozen to England, although crystals could spoil flavor and texture.\n\nThe modern frozen food industry began after Clarence Birdseye observed Inuit quick-freezing fish in Arctic air. Birdseye later developed mechanical freezers, quick-freezing techniques, packaging products in cellophane, and convenient consumer-sized packs.\n\nSales increased in the early 1940s when World War II made tin scarce for canned food. By the 1950s, refrigerator technology had become affordable, and millions of US families owned refrigerators. Swanson launched the TV Dinner in 1954 with a clever name and huge advertising budget.`,
+      ...scheduleWindow("15:40", "16:40"),
+      passageTitle: "IELTS Reading Mock 1",
+      passage: readingPassageText(),
       createdAt: now(),
-      questions: [
-        q(readingId, 1, 1, "People conserved the nutritional value of ____ using freezing and drying.", "blank", [], "potatoes", "The Andean method preserved potatoes."),
-        q(readingId, 1, 2, "____ was kept cool by ice in specially adapted trains.", "blank", [], "butter", "The passage names butter sent by rail."),
-        q(readingId, 1, 3, "Two kinds of ____ were first shipped frozen to England.", "blank", [], "meat", "Beef and mutton are both meat."),
-        q(readingId, 1, 4, "Quick freezing reduced damage caused by ____.", "blank", [], "crystals", "Crystals caused flavor and texture damage."),
-        q(readingId, 1, 5, "Cellophane let customers see the ____.", "blank", [], "quality", "Transparent packaging showed quality."),
-        q(readingId, 1, 6, "Frozen food became popular because of a shortage of ____.", "blank", [], "tin", "Tin was reserved for wartime munitions."),
-        q(readingId, 1, 7, "By the 1950s many homes had a ____.", "blank", [], "refrigerator", "The passage describes affordable refrigerators."),
-        q(readingId, 1, 8, "Australian freezing affected the taste of food.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "TRUE", "The passage says flavor and texture deteriorated."),
-        q(readingId, 1, 9, "Birdseye went to Labrador specifically to learn freezing techniques.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "FALSE", "He went there to trap and trade furs."),
-        q(readingId, 1, 10, "Swanson spent heavily to promote the TV Dinner.", "tfng", ["TRUE", "FALSE", "NOT GIVEN"], "TRUE", "The passage mentions a huge advertising budget.")
-      ]
+      questions: readingQuestions(readingId)
     },
     {
       id: writingId,
       title: "IELTS Writing Mock 1",
       type: "writing",
       duration: 60,
-      ...scheduleWindow("16:10", "17:10"),
+      ...scheduleWindow("16:50", "17:50"),
       task1: "The line graph shows the percentage of people who used five different communication methods between 1998 and 2008. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
       task1Image: "/assets/writing-task-communication-graph.svg",
       task2: "Many manufactured food and drink products contain high levels of sugar, which causes many health problems. Sugary products should be made more expensive to encourage people to consume less sugar. To what extent do you agree or disagree?",
@@ -351,12 +499,22 @@ function requireRole(req, res, db, roles) {
   return user;
 }
 
+function answersMatch(answer, expected) {
+  const cleanAnswer = String(answer || "").trim().replace(/\s+/g, " ");
+  const cleanExpected = String(expected || "").trim().replace(/\s+/g, " ");
+  if (cleanExpected.includes(",")) {
+    const tokenize = (value) => String(value || "").toLowerCase().match(/[a-z0-9]+/g)?.sort().join("|") || "";
+    return tokenize(cleanAnswer) === tokenize(cleanExpected);
+  }
+  return cleanAnswer.localeCompare(cleanExpected, undefined, { sensitivity: "accent" }) === 0;
+}
+
 function scoreAnswers(test, answers) {
   let score = 0;
   const details = test.questions.map((question) => {
     const answer = String(answers[question.id] || "").trim();
     const expected = String(question.correctAnswer || "").trim();
-    const correct = answer.localeCompare(expected, undefined, { sensitivity: "accent" }) === 0;
+    const correct = answersMatch(answer, expected);
     if (correct) score++;
     return { questionId: question.id, number: question.number, answer, correctAnswer: expected, correct, explanation: question.explanation, questionText: question.questionText };
   });

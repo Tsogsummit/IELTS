@@ -1194,7 +1194,7 @@
       "id": "test_listening_1",
       "title": "IELTS Listening Mock 1",
       "type": "listening",
-      "duration": 40,
+      "duration": 35,
       "audioUrl": "https://practicepteonline.com/wp-content/uploads/audio/203_we.mp3?_=1",
       "createdAt": "2026-05-19T02:41:03.851Z",
       "sections": [
@@ -1222,122 +1222,528 @@
           "testId": "test_listening_1",
           "section": 1,
           "number": 1,
-          "questionText": "Prices range from $105 to ____ per month.",
+          "questionText": "Part 1: Prices range from $105 to ____ per month.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "240",
-          "explanation": "The note asks for the maximum monthly rental price."
+          "correctAnswer": "239",
+          "explanation": "Furniture rental price range."
         },
         {
           "id": "test_listening_1_q2",
           "testId": "test_listening_1",
           "section": 1,
           "number": 2,
-          "questionText": "The furniture is very ____.",
+          "questionText": "Part 1: The furniture is very ____.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "modern",
-          "explanation": "The adjective describes the furniture quality."
+          "explanation": "Furniture description."
         },
         {
           "id": "test_listening_1_q3",
           "testId": "test_listening_1",
           "section": 1,
           "number": 3,
-          "questionText": "Free ____ with every living room set.",
+          "questionText": "Part 1: Free ____ with every living room set.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "delivery",
-          "explanation": "The special offer concerns delivery."
+          "correctAnswer": "lamp",
+          "explanation": "Special offer item."
         },
         {
           "id": "test_listening_1_q4",
           "testId": "test_listening_1",
           "section": 1,
           "number": 4,
-          "questionText": "Company name: ____ and Oliver.",
+          "questionText": "Part 1: Company name: ____ and Oliver.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "Smith",
-          "explanation": "The company name completes the note."
+          "correctAnswer": "Aaron",
+          "explanation": "Company name."
         },
         {
           "id": "test_listening_1_q5",
           "testId": "test_listening_1",
           "section": 1,
           "number": 5,
-          "questionText": "12% monthly fee for ____.",
+          "questionText": "Part 1: 12% monthly fee for ____.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "insurance",
-          "explanation": "The monthly fee is for insurance."
+          "correctAnswer": "damage",
+          "explanation": "Monthly fee covers damage."
         },
         {
           "id": "test_listening_1_q6",
           "testId": "test_listening_1",
           "section": 1,
           "number": 6,
-          "questionText": "Cheapest prices for renting furniture and ____ items.",
+          "questionText": "Part 1: Cheapest prices for renting furniture and ____ items.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "electrical",
-          "explanation": "The category is electrical items."
+          "correctAnswer": "electronic",
+          "explanation": "Item category."
         },
         {
           "id": "test_listening_1_q7",
           "testId": "test_listening_1",
           "section": 1,
           "number": 7,
-          "questionText": "Must have own ____.",
+          "questionText": "Part 1: Must have own ____.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "transport",
-          "explanation": "Customers need transport."
+          "correctAnswer": "insurance",
+          "explanation": "Customer requirement."
         },
         {
           "id": "test_listening_1_q8",
           "testId": "test_listening_1",
           "section": 1,
           "number": 8,
-          "questionText": "____ Rentals.",
+          "questionText": "Part 1: ____ Rentals.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "City",
-          "explanation": "The company name is City Rentals."
+          "correctAnswer": "Space",
+          "explanation": "Company name."
         },
         {
           "id": "test_listening_1_q9",
           "testId": "test_listening_1",
           "section": 1,
           "number": 9,
-          "questionText": "See the ____ for the most up-to-date prices.",
+          "questionText": "Part 1: See the ____ for the most up-to-date prices.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "website",
-          "explanation": "Prices are updated online."
+          "correctAnswer": "app",
+          "explanation": "Where prices are updated."
         },
         {
           "id": "test_listening_1_q10",
           "testId": "test_listening_1",
           "section": 1,
           "number": 10,
-          "questionText": "____ are allowed within 7 days of delivery.",
+          "questionText": "Part 1: ____ are allowed within 7 days of delivery.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "exchanges",
-          "explanation": "The policy allows exchanges."
+          "explanation": "Delivery policy."
+        },
+        {
+          "id": "test_listening_1_q11",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 11,
+          "questionText": "Part 2: Who was responsible for starting the community project?",
+          "questionType": "mcq",
+          "options": [
+            "A. The castle owners",
+            "B. A national charity",
+            "C. The local council"
+          ],
+          "correctAnswer": "B. A national charity",
+          "explanation": "Project origin."
+        },
+        {
+          "id": "test_listening_1_q12",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 12,
+          "questionText": "Part 2: How was the gold coin found?",
+          "questionType": "mcq",
+          "options": [
+            "A. Heavy rain had removed some of the soil",
+            "B. The ground was dug up by wild rabbits",
+            "C. A person with a metal detector searched the area"
+          ],
+          "correctAnswer": "A. Heavy rain had removed some of the soil",
+          "explanation": "Discovery method."
+        },
+        {
+          "id": "test_listening_1_q13",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 13,
+          "questionText": "Part 2: What led archaeologists to believe there was an ancient village on this site?",
+          "questionType": "mcq",
+          "options": [
+            "A. The lucky discovery of old records",
+            "B. The bases of several structures visible in the grass",
+            "C. The unusual stones found near the castle"
+          ],
+          "correctAnswer": "A. The lucky discovery of old records",
+          "explanation": "Evidence for the village."
+        },
+        {
+          "id": "test_listening_1_q14",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 14,
+          "questionText": "Part 2: What are the team still hoping to find?",
+          "questionType": "mcq",
+          "options": [
+            "A. Everyday pottery",
+            "B. Animal bones",
+            "C. Pieces of jewellery"
+          ],
+          "correctAnswer": "C. Pieces of jewellery",
+          "explanation": "Remaining target find."
+        },
+        {
+          "id": "test_listening_1_q15",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 15,
+          "questionText": "Part 2: What was found on the other side of the river to the castle?",
+          "questionType": "mcq",
+          "options": [
+            "A. The remains of a large palace",
+            "B. The outline of fields",
+            "C. A number of small huts"
+          ],
+          "correctAnswer": "B. The outline of fields",
+          "explanation": "Find across the river."
+        },
+        {
+          "id": "test_listening_1_q16",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 16,
+          "questionText": "Part 2: What do the team plan to do after work ends this summer?",
+          "questionType": "mcq",
+          "options": [
+            "A. Prepare a display for a museum",
+            "B. Take part in a television programme",
+            "C. Start to organize school visits"
+          ],
+          "correctAnswer": "C. Start to organize school visits",
+          "explanation": "Next planned activity."
+        },
+        {
+          "id": "test_listening_1_q17",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 17,
+          "questionText": "Part 2 map: Bridge foundations. Write the correct letter A-G.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "B",
+          "explanation": "Map label."
+        },
+        {
+          "id": "test_listening_1_q18",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 18,
+          "questionText": "Part 2 map: Rubbish pit. Write the correct letter A-G.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "A",
+          "explanation": "Map label."
+        },
+        {
+          "id": "test_listening_1_q19",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 19,
+          "questionText": "Part 2 map: Meeting hall. Write the correct letter A-G.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "G",
+          "explanation": "Map label."
+        },
+        {
+          "id": "test_listening_1_q20",
+          "testId": "test_listening_1",
+          "section": 2,
+          "number": 20,
+          "questionText": "Part 2 map: Fish pond. Write the correct letter A-G.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "E",
+          "explanation": "Map label."
+        },
+        {
+          "id": "test_listening_1_q21",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 21,
+          "questionText": "Part 3: Finn was pleased to discover that their topic...",
+          "questionType": "mcq",
+          "options": [
+            "A. was not familiar to their module leader",
+            "B. had not been chosen by other students",
+            "C. did not prove to be difficult to research"
+          ],
+          "correctAnswer": "B. had not been chosen by other students",
+          "explanation": "Theatre programmes project."
+        },
+        {
+          "id": "test_listening_1_q22",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 22,
+          "questionText": "Part 3: Maya says a mistaken belief about theatre programmes is that...",
+          "questionType": "mcq",
+          "options": [
+            "A. theatres pay companies to produce them",
+            "B. few theatre-goers buy them nowadays",
+            "C. they contain far more adverts than previously"
+          ],
+          "correctAnswer": "A. theatres pay companies to produce them",
+          "explanation": "Common misconception."
+        },
+        {
+          "id": "test_listening_1_q23",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 23,
+          "questionText": "Part 3: Finn was surprised that, in early British theatre, programmes...",
+          "questionType": "mcq",
+          "options": [
+            "A. were difficult for audiences to obtain",
+            "B. were given out free of charge",
+            "C. were seen as a kind of contract"
+          ],
+          "correctAnswer": "C. were seen as a kind of contract",
+          "explanation": "Historical role."
+        },
+        {
+          "id": "test_listening_1_q24",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 24,
+          "questionText": "Part 3: Maya feels their project should explain why companies of actors...",
+          "questionType": "mcq",
+          "options": [
+            "A. promoted their own plays",
+            "B. performed plays outdoors",
+            "C. had to tour with their plays"
+          ],
+          "correctAnswer": "A. promoted their own plays",
+          "explanation": "Project explanation."
+        },
+        {
+          "id": "test_listening_1_q25",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 25,
+          "questionText": "Part 3: Compared to nineteenth-century programmes, eighteenth-century programmes were...",
+          "questionType": "mcq",
+          "options": [
+            "A. more original",
+            "B. more colourful",
+            "C. more informative"
+          ],
+          "correctAnswer": "C. more informative",
+          "explanation": "Comparison."
+        },
+        {
+          "id": "test_listening_1_q26",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 26,
+          "questionText": "Part 3: Maya does not fully understand why, in the twentieth century...",
+          "questionType": "mcq",
+          "options": [
+            "A. very few theatre programmes were printed in the USA",
+            "B. British theatre programmes failed to develop for so long",
+            "C. theatre programmes in Britain copied fashions from the USA"
+          ],
+          "correctAnswer": "B. British theatre programmes failed to develop for so long",
+          "explanation": "Twentieth-century issue."
+        },
+        {
+          "id": "test_listening_1_q27",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 27,
+          "questionText": "Part 3 shows: Ruy Blas. Choose the comment A-F.",
+          "questionType": "mcq",
+          "options": [
+            "A. Its origin is somewhat controversial",
+            "B. It is historically significant for a country",
+            "C. It was effective at attracting audiences",
+            "D. It is included in a recent project",
+            "E. It contains insights into the show",
+            "F. It resembles an artwork"
+          ],
+          "correctAnswer": "F. It resembles an artwork",
+          "explanation": "Programme comment."
+        },
+        {
+          "id": "test_listening_1_q28",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 28,
+          "questionText": "Part 3 shows: Man of La Mancha. Choose the comment A-F.",
+          "questionType": "mcq",
+          "options": [
+            "A. Its origin is somewhat controversial",
+            "B. It is historically significant for a country",
+            "C. It was effective at attracting audiences",
+            "D. It is included in a recent project",
+            "E. It contains insights into the show",
+            "F. It resembles an artwork"
+          ],
+          "correctAnswer": "E. It contains insights into the show",
+          "explanation": "Programme comment."
+        },
+        {
+          "id": "test_listening_1_q29",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 29,
+          "questionText": "Part 3 shows: The Tragedy of Jane Shore. Choose the comment A-F.",
+          "questionType": "mcq",
+          "options": [
+            "A. Its origin is somewhat controversial",
+            "B. It is historically significant for a country",
+            "C. It was effective at attracting audiences",
+            "D. It is included in a recent project",
+            "E. It contains insights into the show",
+            "F. It resembles an artwork"
+          ],
+          "correctAnswer": "B. It is historically significant for a country",
+          "explanation": "Programme comment."
+        },
+        {
+          "id": "test_listening_1_q30",
+          "testId": "test_listening_1",
+          "section": 3,
+          "number": 30,
+          "questionText": "Part 3 shows: The Sailors' Festival. Choose the comment A-F.",
+          "questionType": "mcq",
+          "options": [
+            "A. Its origin is somewhat controversial",
+            "B. It is historically significant for a country",
+            "C. It was effective at attracting audiences",
+            "D. It is included in a recent project",
+            "E. It contains insights into the show",
+            "F. It resembles an artwork"
+          ],
+          "correctAnswer": "D. It is included in a recent project",
+          "explanation": "Programme comment."
+        },
+        {
+          "id": "test_listening_1_q31",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 31,
+          "questionText": "Part 4: Products can be accessed without the need for any ____.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "adaptation",
+          "explanation": "Definition of inclusive design."
+        },
+        {
+          "id": "test_listening_1_q32",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 32,
+          "questionText": "Part 4: Universal design includes catering for people with ____ problems.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "cognitive",
+          "explanation": "Universal design scope."
+        },
+        {
+          "id": "test_listening_1_q33",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 33,
+          "questionText": "Part 4: ____ which are adjustable, avoiding back or neck problems.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "desks",
+          "explanation": "Adjustable workplace item."
+        },
+        {
+          "id": "test_listening_1_q34",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 34,
+          "questionText": "Part 4: ____ in public toilets which are easier to use.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "taps",
+          "explanation": "Public toilet design."
+        },
+        {
+          "id": "test_listening_1_q35",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 35,
+          "questionText": "Part 4: Designers avoid using ____ in interfaces.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "blue",
+          "explanation": "Interface colour."
+        },
+        {
+          "id": "test_listening_1_q36",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 36,
+          "questionText": "Part 4: People can make commands using a mouse, keyboard or their ____.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "voice",
+          "explanation": "Input method."
+        },
+        {
+          "id": "test_listening_1_q37",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 37,
+          "questionText": "Part 4: Seat belts are especially problematic for ____ women.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "pregnant",
+          "explanation": "Safety concern."
+        },
+        {
+          "id": "test_listening_1_q38",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 38,
+          "questionText": "Part 4: PPE jackets are often unsuitable because of the size of women's ____.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "shoulders",
+          "explanation": "PPE fit issue."
+        },
+        {
+          "id": "test_listening_1_q39",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 39,
+          "questionText": "Part 4: PPE for female ____ officers dealing with emergencies is the worst.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "police",
+          "explanation": "Emergency service role."
+        },
+        {
+          "id": "test_listening_1_q40",
+          "testId": "test_listening_1",
+          "section": 4,
+          "number": 40,
+          "questionText": "Part 4: The ____ in offices is often too low for women.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "temperature",
+          "explanation": "Workplace comfort issue."
         }
       ],
-      "startsAt": "2026-05-19T14:10:00+08:00",
-      "endsAt": "2026-05-19T14:50:00+08:00"
+      "startsAt": "2026-05-19T14:55:00+08:00",
+      "endsAt": "2026-05-19T15:30:00+08:00"
     },
     {
       "id": "test_reading_1",
       "title": "IELTS Reading Mock 1",
       "type": "reading",
       "duration": 60,
-      "passageTitle": "Frozen Food",
-      "passage": "A US perspective on the development of the frozen food industry.\n\nAt some point in history, humans discovered that ice preserved food. Two thousand years ago, the inhabitants of South America's Andean mountains conserved potatoes by freezing them overnight, trampling them to squeeze out moisture, then drying them in the sun.\n\nNatural ice remained the main form of refrigeration until late in the 19th century. In 1851, railroads began putting blocks of ice in insulated rail cars to send butter from Ogdensburg, New York, to Boston.\n\nIn 1870, Australian inventors found a way to make mechanical ice. Cattlemen realized this invention could export meat across oceans. In 1880, Australian beef and mutton was sent frozen to England, although crystals could spoil flavor and texture.\n\nThe modern frozen food industry began after Clarence Birdseye observed Inuit quick-freezing fish in Arctic air. Birdseye later developed mechanical freezers, quick-freezing techniques, packaging products in cellophane, and convenient consumer-sized packs.\n\nSales increased in the early 1940s when World War II made tin scarce for canned food. By the 1950s, refrigerator technology had become affordable, and millions of US families owned refrigerators. Swanson launched the TV Dinner in 1954 with a clever name and huge advertising budget.",
+      "passageTitle": "IELTS Reading Mock 1",
+      "passage": "READING PASSAGE 1\n\nFrozen Food\nA US perspective on the development of the frozen food industry\n\nAt some point in history, humans discovered that ice preserved food. There is evidence that winter ice was stored to preserve food in the summer as far back as 10,000 years ago. Two thousand years ago, the inhabitants of South America's Andean mountains had a unique means of conserving potatoes for later consumption. They froze them overnight, then trampled them to squeeze out the moisture, then dried them in the sun. This preserved their nutritional value - if not their aesthetic appeal.\n\nNatural ice remained the main form of refrigeration until late in the 19th century. In the early 1800s, ship owners from Boston, USA, had enormous blocks of Arctic ice towed all over the Atlantic for the purpose of food preservation. In 1851, railroads first began putting blocks of ice in insulated rail cars to send butter from Ogdensburg, New York, to Boston.\n\nFinally, in 1870, Australian inventors found a way to make 'mechanical ice'. They used a compressor to force a gas - ammonia at first and later Freon - through a condenser. The compressed gas gave up some of its heat as it moved through the condenser. Then the gas was released quickly into a low-pressure evaporator coil where it became liquid and cold. Air was blown over the evaporator coil and then this cooled air passed into an insulated compartment, lowering its temperature to freezing point.\n\nInitially, this process was invented to keep Australian beer cool even in hot weather. But Australian cattlemen were quick to realize that, if they could put this new invention on a ship, they could export meat across the oceans. In 1880, a shipment of Australian beef and mutton was sent, frozen, to England. While the food frozen this way was still palatable, there was some deterioration. During the freezing process, crystals formed within the cells of the food, and when the ice expanded and the cells burst, this spoilt the flavor and texture of the food.\n\nThe modern frozen food industry began with the indigenous Inuit people of Canada. In 1912, a biology student in Massachusetts, USA, named Clarence Birdseye, ran out of money and went to Labrador in Canada to trap and trade furs. While he was there, he became fascinated with how the Inuit would quickly freeze fish in the Arctic air. The fish looked and tasted fresh even months later.\n\nBirdseye returned to the USA in 1917 and began developing mechanical freezers capable of quick-freezing food. Birdseye methodically kept inventing better freezers and gradually built a business selling frozen fish from Gloucester, Massachusetts. In 1929, his business was sold and became General Foods, but he stayed with the company as director of research, and his division continued to innovate.\n\nBirdseye was responsible for several key innovations that made the frozen food industry possible. He developed quick-freezing techniques that reduced the damage that crystals caused, as well as the technique of freezing the product in the package it was to be sold in. He also introduced the use of cellophane, the first transparent material for food packaging, which allowed consumers to see the quality of the product. Birdseye products also came in convenient size packages that could be prepared with a minimum of effort.\n\nBut there were still obstacles. In the 1930s, few grocery stores could afford to buy freezers for a market that was not established yet. So, Birdseye leased inexpensive freezer cases to them. He also leased insulated railroad cars so that he could ship his products nationwide. However, few consumers had freezers large enough or efficient enough to take advantage of the products.\n\nSales increased in the early 1940s, when World War II gave a boost to the frozen food industry because tin was being used for munitions. Canned foods were rationed to save tin for the war effort, while frozen foods were abundant and cheap. Finally, by the 1950s, refrigerator technology had developed far enough to make these appliances affordable for the average family. By 1953, 33 million US families owned a refrigerator, and manufacturers were gradually increasing the size of the freezer compartments in them.\n\n1950s families were also looking for convenience at mealtimes, so the moment was right for the arrival of the TV Dinner. Swanson Foods was a large, nationally recognized producer of canned and frozen poultry. In 1954, the company adapted some of Birdseye's freezing techniques, and with the help of a clever name and a huge advertising budget, it launched the first TV Dinner. This consisted of frozen turkey, potatoes and vegetables served in the same segmented aluminum tray that was used by airlines. The product was an instant success. Within a year, Swanson had sold 13 million TV dinners. American consumers could not resist the combination of a trusted brand name, a single-serving package and the convenience of a meal that could be ready after only 25 minutes in a hot oven. By 1959, Americans were spending $2.7 billion annually on frozen foods, and half a billion of that was spent on ready-prepared meals such as the TV Dinner.\n\nToday, the US frozen food industry has a turnover of over $67 billion annually, with $26.6 billion of that sold to consumers for home consumption. The remaining $40 billion in frozen food sales come through restaurants, cafeterias, hospitals and schools, and that represents a third of the total food service sales.\n\nREADING PASSAGE 2\n\nCan the planet's coral reefs be saved?\n\nA Conservationists have put the final touches to a giant artificial reef they have been assembling at the world-renowned Zoological Society of London (London Zoo). Samples of the planet's most spectacular corals - vivid green branching coral, yellow scroll, blue ridge and many more species have been added to the giant tank along with fish that thrive in their presence: blue tang, clownfish and many others. The reef is in the zoo's new gallery, Tiny Giants, which is dedicated to the minuscule invertebrate creatures that sustain life across the planet. The coral reef tank and its seven-metre-wide window form the core of the exhibition.\n\n'Coral reefs are the most diverse ecosystems on Earth and we want to show people how wonderful they are,' said Paul Pearce-Kelly, senior curator of invertebrates and fish at the Zoological Society of London. 'However, we also want to highlight the research and conservation efforts that are now being carried out to try to save them from the threat of global warming.' They want people to see what is being done to try to save these wonders.\n\nB Corals are composed of tiny animals, known as polyps, with tentacles for capturing small marine creatures in the sea water. These polyps are transparent but get their brilliant tones of pink, orange, blue, green, etc. from algae that live within them, which in turn get protection, while their photosynthesising of the sun's rays provides nutrients for the polyps. This comfortable symbiotic relationship has led to the growth of coral reefs that cover 0.1% of the planet's ocean bed while providing homes for more than 25% of marine species, including fish, molluscs, sponges and shellfish.\n\nC As a result, coral reefs are often described as the 'rainforests of the sea', though the comparison is dismissed by some naturalists, including David Attenborough. 'People say you cannot beat the rainforest,' Attenborough has stated. 'But that is simply not true. You go there and the first thing you think is: where are the birds? Where are the animals? They are hiding in the trees, of course. No, if you want beauty and wildlife, you want a coral reef. Put on a mask and stick your head under the water. The sight is mind-blowing.'\n\nD Unfortunately, these majestic sights are now under very serious threat, with the most immediate problem coming in the form of thermal stress. Rising ocean temperatures are triggering bleaching events that strip reefs of their colour and eventually kill them. And that is just the start. Other menaces include ocean acidification, sea level increase, pollution by humans, deoxygenation and ocean current changes, while the climate crisis is also increasing habitat destruction. As a result, vast areas including massive chunks of Australia's Great Barrier Reef have already been destroyed, and scientists advise that more than 90% of reefs could be lost by 2050 unless urgent action is taken to tackle global heating and greenhouse gas emissions.\n\nPearce-Kelly says that coral reefs have to survive really harsh conditions, wave erosion and other factors. And 'when things start to go wrong in the oceans, then corals will be the first to react. And that is exactly what we are seeing now. Coral reefs are dying and they are telling us that all is not well with our planet.'\n\nE However, scientists are trying to pinpoint hardy types of coral that could survive our overheated oceans, and some of this research will be carried out at London Zoo. 'Behind our coral reef tank we have built laboratories where scientists will be studying coral species,' said Pearce-Kelly. One aim will be to carry out research on species to find those that can survive best in warm, acidic waters. Another will be to try to increase coral breeding rates. 'Coral spawn just once a year,' he added. 'However, aquarium-based research has enabled some corals to spawn artificially, which can assist coral reef restoration efforts. And if this can be extended for all species, we could consider the launching of coral-spawning programmes several times a year. That would be a big help in restoring blighted reefs.'\n\nF Research in these fields is being conducted in laboratories around the world, with the London Zoo centre linked to this global network. Studies carried out in one centre can then be tested in others. The resulting young coral can then be displayed in the tank in Tiny Giants. 'The crucial point is that the progress we make in making coral better able to survive in a warming world can be shown to the public and encourage them to believe that we can do something to save the planet's reefs,' said Pearce-Kelly. 'Saving our coral reefs is now a critically important ecological goal.'\n\nREADING PASSAGE 3\n\nRobots and us\n\nThree leaders in their fields answer questions about our relationships with robots.\n\nWhen asked 'Should robots be used to colonise other planets?', cosmology and astrophysics Professor Martin Rees said he believed the solar system would be mapped by robotic craft by the end of the century. 'The next step would be mining of asteroids, enabling fabrication of large structures in space without having to bring all the raw materials from Earth... I think this is more realistic and benign than the terraforming of planets.' He maintains that colonised planets 'should be preserved with a status that is analogous to Antarctica here on Earth.'\n\nOn the question of using robots to colonise other planets and exploit mineral resources, engineering Professor Daniel Wolpert replied, 'I do not see a pressing need to colonise other planets unless we can bring these resources back to Earth. The vast majority of Earth is currently inaccessible to us. Using robots to gather resources nearer to home would seem to be a better use of our robotic tools.'\n\nMeanwhile, for anthropology Professor Kathleen Richardson, the idea of 'colonisation' of other planets seemed morally dubious: 'I think whether we do something on Earth or on Mars we should always do it in the spirit of a genuine interest in the Other, not to impose a particular model, but to meet the Other.'\n\nIn response to the second question, 'How soon will machine intelligence outstrip human intelligence?', Rees mentions robots that are advanced enough to beat humans at chess, but then goes on to say, 'Robots are still limited in their ability to sense their environment: they cannot yet recognise and move the pieces on a real chessboard as cleverly as a child can. Later this century, however, their more advanced successors may relate to their surroundings, and to people, as adeptly as we do. Moral questions then arise. Should we feel guilty about exploiting sophisticated robots? Should we fret if they are underemployed, frustrated, or bored?'\n\nWolpert's response to the question about machine intelligence outstripping human intelligence was this: 'In a limited sense it already has. Machines can already navigate, remember and search for items with an ability that far outstrips humans. However, there is no machine that can identify visual objects or speech with the reliability and flexibility of humans. Expecting a machine close to the creative intelligence of a human within the next 50 years would be highly ambitious.'\n\nRichardson believes that our fear of machines becoming too advanced has more to do with human nature than anything intrinsic to the machines themselves. In her view, it stems from humans' tendency to personify inanimate objects: we create machines based on representations of ourselves, imagine that machines think and behave as we do, and therefore see them as an autonomous threat. 'One of the consequences of thinking that the problem lies with machines is that we tend to imagine they are greater and more powerful than they really are and subsequently they become so.'\n\nThis led on to the third question, 'Should we be scared by advances in artificial intelligence?' To this question, Rees replied, 'Those who should be worried are the futurologists who believe in the so-called singularity. And another worry is that we are increasingly dependent on computer networks, and that these could behave like a single brain with a mind of its own, and with goals that may be contrary to human welfare. I think we should ensure that robots remain as no more than idiot savants lacking the capacity to outwit us, even though they may greatly surpass us in the ability to calculate and process information.'\n\nWolpert's response was to say that we have already seen the damaging effects of artificial intelligence in the form of computer viruses. 'But in this case,' he says, 'the real intelligence is the malicious designer. Critically, the benefits of computers outweigh the damage that computer viruses cause. Similarly, while there may be misuses of robotics in the near future, the benefits that they will bring are likely to outweigh these negative aspects.'\n\nRichardson's response to this question was this: 'We need to ask why fears of artificial intelligence and robots persist; none have in fact risen up and challenged human supremacy.' She believes that as robots have never shown themselves to be a threat to humans, it seems unlikely that they ever will. In fact, she went on, 'Not all fear robots; many people welcome machine intelligence.'\n\nIn answer to the fourth question, 'What can science fiction tell us about robotics?', Rees replied, 'I sometimes advise students that it is better to read first-rate science fiction than second-rate science - more stimulating, and perhaps no more likely to be wrong.'\n\nAs his response, Wolpert commented, 'Science fiction has often been remarkable at predicting the future. Science fiction has painted a vivid spectrum of possible futures, from cute and helpful robots to dystopian robotic societies. Interestingly, almost no science fiction envisages a future without robots.'\n\nFinally, on the question of science fiction, Richardson pointed out that in modern society, people tend to think there is reality on the one hand, and fiction and fantasy on the other. She then explained that the division did not always exist, and that scientists and technologists made this separation because they wanted to carve out the sphere of their work. 'But the divide is not so clear cut, and that is why the worlds seem to collide at times,' she said. 'In some cases, we need to bring these different understandings together to get a whole perspective. Perhaps then, we will not be so frightened that something we create as a copy of ourselves will be a threat to us.'",
       "createdAt": "2026-05-19T02:41:03.851Z",
       "questions": [
         {
@@ -1345,7 +1751,7 @@
           "testId": "test_reading_1",
           "section": 1,
           "number": 1,
-          "questionText": "People conserved the nutritional value of ____ using freezing and drying.",
+          "questionText": "Passage 1: People conserved the nutritional value of ____ using a method of freezing then drying.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "potatoes",
@@ -1356,73 +1762,88 @@
           "testId": "test_reading_1",
           "section": 1,
           "number": 2,
-          "questionText": "____ was kept cool by ice in specially adapted trains.",
+          "questionText": "Passage 1: ____ was kept cool by ice during transportation in specially adapted trains.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "butter",
-          "explanation": "The passage names butter sent by rail."
+          "explanation": "Butter was sent in insulated rail cars."
         },
         {
           "id": "test_reading_1_q3",
           "testId": "test_reading_1",
           "section": 1,
           "number": 3,
-          "questionText": "Two kinds of ____ were first shipped frozen to England.",
+          "questionText": "Passage 1: Two kinds of ____ were the first frozen food shipped to England.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "meat",
-          "explanation": "Beef and mutton are both meat."
+          "explanation": "Beef and mutton are two kinds of meat."
         },
         {
           "id": "test_reading_1_q4",
           "testId": "test_reading_1",
           "section": 1,
           "number": 4,
-          "questionText": "Quick freezing reduced damage caused by ____.",
+          "questionText": "Passage 1: Quick-freezing methods meant ____ did not spoil the food.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "crystals",
-          "explanation": "Crystals caused flavor and texture damage."
+          "explanation": "Quick freezing reduced damage caused by crystals."
         },
         {
           "id": "test_reading_1_q5",
           "testId": "test_reading_1",
           "section": 1,
           "number": 5,
-          "questionText": "Cellophane let customers see the ____.",
+          "questionText": "Passage 1: Birdseye packaged products with ____ so the product was visible.",
           "questionType": "blank",
           "options": [],
-          "correctAnswer": "quality",
-          "explanation": "Transparent packaging showed quality."
+          "correctAnswer": "cellophane",
+          "explanation": "Cellophane was transparent packaging."
         },
         {
           "id": "test_reading_1_q6",
           "testId": "test_reading_1",
           "section": 1,
           "number": 6,
-          "questionText": "Frozen food became popular because of a shortage of ____.",
+          "questionText": "Passage 1: Frozen food became popular because of a shortage of ____.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "tin",
-          "explanation": "Tin was reserved for wartime munitions."
+          "explanation": "Tin was needed for munitions."
         },
         {
           "id": "test_reading_1_q7",
           "testId": "test_reading_1",
           "section": 1,
           "number": 7,
-          "questionText": "By the 1950s many homes had a ____.",
+          "questionText": "Passage 1: In the 1950s, a large number of homes now had a ____.",
           "questionType": "blank",
           "options": [],
           "correctAnswer": "refrigerator",
-          "explanation": "The passage describes affordable refrigerators."
+          "explanation": "Many US families owned a refrigerator."
         },
         {
           "id": "test_reading_1_q8",
           "testId": "test_reading_1",
           "section": 1,
           "number": 8,
-          "questionText": "Australian freezing affected the taste of food.",
+          "questionText": "Passage 1: The ice transportation business made some Boston ship owners very wealthy in the early 1800s.",
+          "questionType": "tfng",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "NOT GIVEN",
+          "explanation": "The passage does not say whether they became wealthy."
+        },
+        {
+          "id": "test_reading_1_q9",
+          "testId": "test_reading_1",
+          "section": 1,
+          "number": 9,
+          "questionText": "Passage 1: A disadvantage of the freezing process invented in Australia was that it affected the taste of food.",
           "questionType": "tfng",
           "options": [
             "TRUE",
@@ -1430,14 +1851,14 @@
             "NOT GIVEN"
           ],
           "correctAnswer": "TRUE",
-          "explanation": "The passage says flavor and texture deteriorated."
+          "explanation": "The passage says the process spoilt flavor and texture."
         },
         {
-          "id": "test_reading_1_q9",
+          "id": "test_reading_1_q10",
           "testId": "test_reading_1",
           "section": 1,
-          "number": 9,
-          "questionText": "Birdseye went to Labrador specifically to learn freezing techniques.",
+          "number": 10,
+          "questionText": "Passage 1: Clarence Birdseye travelled to Labrador in order to learn how the Inuit people froze fish.",
           "questionType": "tfng",
           "options": [
             "TRUE",
@@ -1445,14 +1866,14 @@
             "NOT GIVEN"
           ],
           "correctAnswer": "FALSE",
-          "explanation": "He went there to trap and trade furs."
+          "explanation": "He went to trap and trade furs."
         },
         {
-          "id": "test_reading_1_q10",
+          "id": "test_reading_1_q11",
           "testId": "test_reading_1",
           "section": 1,
-          "number": 10,
-          "questionText": "Swanson spent heavily to promote the TV Dinner.",
+          "number": 11,
+          "questionText": "Passage 1: Swanson Foods invested a great deal of money in the promotion of the TV Dinner.",
           "questionType": "tfng",
           "options": [
             "TRUE",
@@ -1461,10 +1882,472 @@
           ],
           "correctAnswer": "TRUE",
           "explanation": "The passage mentions a huge advertising budget."
+        },
+        {
+          "id": "test_reading_1_q12",
+          "testId": "test_reading_1",
+          "section": 1,
+          "number": 12,
+          "questionText": "Passage 1: Swanson Foods developed a new style of container for the launch of the TV Dinner.",
+          "questionType": "tfng",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "FALSE",
+          "explanation": "The tray was the same type used by airlines."
+        },
+        {
+          "id": "test_reading_1_q13",
+          "testId": "test_reading_1",
+          "section": 1,
+          "number": 13,
+          "questionText": "Passage 1: The US frozen food industry is currently the largest in the world.",
+          "questionType": "tfng",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "NOT GIVEN",
+          "explanation": "The passage gives turnover figures but no global comparison."
+        },
+        {
+          "id": "test_reading_1_q14",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 14,
+          "questionText": "Passage 2: Choose the correct heading for Section A.",
+          "questionType": "mcq",
+          "options": [
+            "i. Tried and tested solutions",
+            "ii. cooperation beneath the waves",
+            "iii. working to lessen the problems",
+            "iv. disagreement about the accuracy of a certain phrase",
+            "v. two clear educational goals",
+            "vi. promoting hope",
+            "vii. A warning of further trouble ahead"
+          ],
+          "correctAnswer": "v. two clear educational goals",
+          "explanation": "The section describes showing reef beauty and highlighting conservation."
+        },
+        {
+          "id": "test_reading_1_q15",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 15,
+          "questionText": "Passage 2: Choose the correct heading for Section B.",
+          "questionType": "mcq",
+          "options": [
+            "i. Tried and tested solutions",
+            "ii. cooperation beneath the waves",
+            "iii. working to lessen the problems",
+            "iv. disagreement about the accuracy of a certain phrase",
+            "v. two clear educational goals",
+            "vi. promoting hope",
+            "vii. A warning of further trouble ahead"
+          ],
+          "correctAnswer": "ii. cooperation beneath the waves",
+          "explanation": "The section explains the symbiotic relationship between corals and algae."
+        },
+        {
+          "id": "test_reading_1_q16",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 16,
+          "questionText": "Passage 2: Choose the correct heading for Section C.",
+          "questionType": "mcq",
+          "options": [
+            "i. Tried and tested solutions",
+            "ii. cooperation beneath the waves",
+            "iii. working to lessen the problems",
+            "iv. disagreement about the accuracy of a certain phrase",
+            "v. two clear educational goals",
+            "vi. promoting hope",
+            "vii. A warning of further trouble ahead"
+          ],
+          "correctAnswer": "iv. disagreement about the accuracy of a certain phrase",
+          "explanation": "The section discusses the disputed phrase rainforests of the sea."
+        },
+        {
+          "id": "test_reading_1_q17",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 17,
+          "questionText": "Passage 2: Choose the correct heading for Section D.",
+          "questionType": "mcq",
+          "options": [
+            "i. Tried and tested solutions",
+            "ii. cooperation beneath the waves",
+            "iii. working to lessen the problems",
+            "iv. disagreement about the accuracy of a certain phrase",
+            "v. two clear educational goals",
+            "vi. promoting hope",
+            "vii. A warning of further trouble ahead"
+          ],
+          "correctAnswer": "vii. A warning of further trouble ahead",
+          "explanation": "The section warns of reef loss by 2050."
+        },
+        {
+          "id": "test_reading_1_q18",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 18,
+          "questionText": "Passage 2: Choose the correct heading for Section E.",
+          "questionType": "mcq",
+          "options": [
+            "i. Tried and tested solutions",
+            "ii. cooperation beneath the waves",
+            "iii. working to lessen the problems",
+            "iv. disagreement about the accuracy of a certain phrase",
+            "v. two clear educational goals",
+            "vi. promoting hope",
+            "vii. A warning of further trouble ahead"
+          ],
+          "correctAnswer": "iii. working to lessen the problems",
+          "explanation": "The section describes research to help reefs survive."
+        },
+        {
+          "id": "test_reading_1_q19",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 19,
+          "questionText": "Passage 2: Choose the correct heading for Section F.",
+          "questionType": "mcq",
+          "options": [
+            "i. Tried and tested solutions",
+            "ii. cooperation beneath the waves",
+            "iii. working to lessen the problems",
+            "iv. disagreement about the accuracy of a certain phrase",
+            "v. two clear educational goals",
+            "vi. promoting hope",
+            "vii. A warning of further trouble ahead"
+          ],
+          "correctAnswer": "vi. promoting hope",
+          "explanation": "The section says progress can encourage public hope."
+        },
+        {
+          "id": "test_reading_1_q20",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 20,
+          "questionText": "Passage 2: Which TWO causes of damage to coral reefs are mentioned? Write both letters, e.g. C, E.",
+          "questionType": "blank",
+          "options": [
+            "A. a rising number of extreme storms",
+            "B. the removal of too many fish from the sea",
+            "C. the contamination of the sea from waste",
+            "D. increased disease among marine species",
+            "E. alterations in the usual flow of water in the seas"
+          ],
+          "correctAnswer": "C, E",
+          "explanation": "Pollution by humans and ocean current changes are mentioned."
+        },
+        {
+          "id": "test_reading_1_q21",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 21,
+          "questionText": "Passage 2: Which TWO causes of damage to coral reefs are mentioned? Write the same two letters as Question 20.",
+          "questionType": "blank",
+          "options": [
+            "A. a rising number of extreme storms",
+            "B. the removal of too many fish from the sea",
+            "C. the contamination of the sea from waste",
+            "D. increased disease among marine species",
+            "E. alterations in the usual flow of water in the seas"
+          ],
+          "correctAnswer": "C, E",
+          "explanation": "This pair completes Questions 20 and 21."
+        },
+        {
+          "id": "test_reading_1_q22",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 22,
+          "questionText": "Passage 2: Which TWO statements are true of the researchers at London Zoo? Write both letters, e.g. B, D.",
+          "questionType": "blank",
+          "options": [
+            "A. They are hoping to expand the numbers of different corals being bred in laboratories",
+            "B. They want to identify corals that can cope well with the changed sea conditions",
+            "C. They are looking at ways of creating artificial reefs that corals could grow on",
+            "D. They are trying out methods that would speed up reproduction in some corals",
+            "E. They are investigating materials that might protect reefs from higher temperatures"
+          ],
+          "correctAnswer": "B, D",
+          "explanation": "They want to identify hardy corals and increase breeding rates."
+        },
+        {
+          "id": "test_reading_1_q23",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 23,
+          "questionText": "Passage 2: Which TWO statements are true of the researchers at London Zoo? Write the same two letters as Question 22.",
+          "questionType": "blank",
+          "options": [
+            "A. They are hoping to expand the numbers of different corals being bred in laboratories",
+            "B. They want to identify corals that can cope well with the changed sea conditions",
+            "C. They are looking at ways of creating artificial reefs that corals could grow on",
+            "D. They are trying out methods that would speed up reproduction in some corals",
+            "E. They are investigating materials that might protect reefs from higher temperatures"
+          ],
+          "correctAnswer": "B, D",
+          "explanation": "This pair completes Questions 22 and 23."
+        },
+        {
+          "id": "test_reading_1_q24",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 24,
+          "questionText": "Passage 2: Corals have a number of ____ which they use to collect their food.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "tentacles",
+          "explanation": "Polyps have tentacles for capturing food."
+        },
+        {
+          "id": "test_reading_1_q25",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 25,
+          "questionText": "Passage 2: Algae gain ____ from being inside the coral.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "protection",
+          "explanation": "The algae get protection from the coral."
+        },
+        {
+          "id": "test_reading_1_q26",
+          "testId": "test_reading_1",
+          "section": 2,
+          "number": 26,
+          "questionText": "Passage 2: Increases in the warmth of the sea water can remove the ____ from coral.",
+          "questionType": "blank",
+          "options": [],
+          "correctAnswer": "colour",
+          "explanation": "Bleaching strips reefs of their colour."
+        },
+        {
+          "id": "test_reading_1_q27",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 27,
+          "questionText": "Passage 3: For our own safety, humans will need to restrict the abilities of robots.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "A. Martin Rees",
+          "explanation": "Rees says robots should lack the capacity to outwit us."
+        },
+        {
+          "id": "test_reading_1_q28",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 28,
+          "questionText": "Passage 3: The risk of robots harming us is less serious than humans believe it to be.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "C. Kathleen Richardson",
+          "explanation": "Richardson says robots have not shown themselves to be a threat."
+        },
+        {
+          "id": "test_reading_1_q29",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 29,
+          "questionText": "Passage 3: It will take many decades for robot intelligence to be as imaginative as human intelligence.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "B. Daniel Wolpert",
+          "explanation": "Wolpert says human-level creative intelligence within 50 years is highly ambitious."
+        },
+        {
+          "id": "test_reading_1_q30",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 30,
+          "questionText": "Passage 3: We may have to start considering whether we are treating robots fairly.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "A. Martin Rees",
+          "explanation": "Rees raises moral questions about exploiting sophisticated robots."
+        },
+        {
+          "id": "test_reading_1_q31",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 31,
+          "questionText": "Passage 3: Robots are probably of more help to us on Earth than in space.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "B. Daniel Wolpert",
+          "explanation": "Wolpert says gathering resources nearer to home is a better use."
+        },
+        {
+          "id": "test_reading_1_q32",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 32,
+          "questionText": "Passage 3: High-quality science fiction may be just as accurate as mediocre scientists.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "A. Martin Rees",
+          "explanation": "Rees recommends first-rate science fiction over second-rate science."
+        },
+        {
+          "id": "test_reading_1_q33",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 33,
+          "questionText": "Passage 3: There are those who look forward to robots developing greater intelligence.",
+          "questionType": "mcq",
+          "options": [
+            "A. Martin Rees",
+            "B. Daniel Wolpert",
+            "C. Kathleen Richardson"
+          ],
+          "correctAnswer": "C. Kathleen Richardson",
+          "explanation": "Richardson says many people welcome machine intelligence."
+        },
+        {
+          "id": "test_reading_1_q34",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 34,
+          "questionText": "Passage 3: Richardson and Rees express similar views regarding the ethical aspect of...",
+          "questionType": "mcq",
+          "options": [
+            "A. robots to explore outer space",
+            "B. advances made in machine intelligence so far",
+            "C. changes made to other planets for our own benefit",
+            "D. the harm already done by artificial intelligence"
+          ],
+          "correctAnswer": "C. changes made to other planets for our own benefit",
+          "explanation": "Both raise ethical concerns about changing or imposing on other planets."
+        },
+        {
+          "id": "test_reading_1_q35",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 35,
+          "questionText": "Passage 3: Rees and Wolpert share an opinion about the extent of...",
+          "questionType": "mcq",
+          "options": [
+            "A. robots to explore outer space",
+            "B. advances made in machine intelligence so far",
+            "C. changes made to other planets for our own benefit",
+            "D. the harm already done by artificial intelligence"
+          ],
+          "correctAnswer": "B. advances made in machine intelligence so far",
+          "explanation": "Both identify current limits of machine intelligence."
+        },
+        {
+          "id": "test_reading_1_q36",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 36,
+          "questionText": "Passage 3: Wolpert disagrees with Richardson on the question of...",
+          "questionType": "mcq",
+          "options": [
+            "A. robots to explore outer space",
+            "B. advances made in machine intelligence so far",
+            "C. changes made to other planets for our own benefit",
+            "D. the harm already done by artificial intelligence"
+          ],
+          "correctAnswer": "D. the harm already done by artificial intelligence",
+          "explanation": "Wolpert cites computer viruses; Richardson says robots have not challenged humans."
+        },
+        {
+          "id": "test_reading_1_q37",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 37,
+          "questionText": "Passage 3: What point does Richardson make about fear of machines?",
+          "questionType": "mcq",
+          "options": [
+            "A. It has grown alongside the development of ever more advanced robots",
+            "B. It is the result of our inclination to attribute human characteristics to non-human entities",
+            "C. It has its origins in basic misunderstandings about how inanimate objects function",
+            "D. It demonstrates a key difference between human intelligence and machine intelligence"
+          ],
+          "correctAnswer": "B. It is the result of our inclination to attribute human characteristics to non-human entities",
+          "explanation": "Richardson refers to personifying inanimate objects."
+        },
+        {
+          "id": "test_reading_1_q38",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 38,
+          "questionText": "Passage 3: What potential advance does Rees see as a cause for concern?",
+          "questionType": "mcq",
+          "options": [
+            "A. robots outnumbering people",
+            "B. robots having abilities which humans do not",
+            "C. artificial intelligence developing independent thought",
+            "D. artificial intelligence taking over every aspect of our lives"
+          ],
+          "correctAnswer": "C. artificial intelligence developing independent thought",
+          "explanation": "Rees worries about a network behaving like a brain with its own goals."
+        },
+        {
+          "id": "test_reading_1_q39",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 39,
+          "questionText": "Passage 3: What does Wolpert emphasise in his response to the question about science fiction?",
+          "questionType": "mcq",
+          "options": [
+            "A. how science fiction influences our attitudes to robots",
+            "B. how fundamental robots are to the science fiction genre",
+            "C. how the image of robots in science fiction has changed over time",
+            "D. how reactions to similar portrayals of robots in science fiction may vary"
+          ],
+          "correctAnswer": "B. how fundamental robots are to the science fiction genre",
+          "explanation": "Wolpert says almost no science fiction imagines a future without robots."
+        },
+        {
+          "id": "test_reading_1_q40",
+          "testId": "test_reading_1",
+          "section": 3,
+          "number": 40,
+          "questionText": "Passage 3: What is Richardson doing in her comment about reality and fantasy?",
+          "questionType": "mcq",
+          "options": [
+            "A. warning people not to confuse one with the other",
+            "B. outlining ways in which one has impacted on the other",
+            "C. recommending a change of approach in how people view them",
+            "D. explaining why scientists have a different perspective on them from other people"
+          ],
+          "correctAnswer": "C. recommending a change of approach in how people view them",
+          "explanation": "Richardson says different understandings need to be brought together."
         }
       ],
-      "startsAt": "2026-05-19T15:00:00+08:00",
-      "endsAt": "2026-05-19T16:00:00+08:00"
+      "startsAt": "2026-05-19T15:40:00+08:00",
+      "endsAt": "2026-05-19T16:40:00+08:00"
     },
     {
       "id": "test_writing_1",
@@ -1476,8 +2359,8 @@
       "createdAt": "2026-05-19T02:41:03.851Z",
       "questions": [],
       "task1Image": "/assets/writing-task-communication-graph.svg",
-      "startsAt": "2026-05-19T16:10:00+08:00",
-      "endsAt": "2026-05-19T17:10:00+08:00"
+      "startsAt": "2026-05-19T16:50:00+08:00",
+      "endsAt": "2026-05-19T17:50:00+08:00"
     },
     {
       "id": "test_speaking_1",
@@ -1538,10 +2421,10 @@
           "questionId": "test_listening_1_q1",
           "number": 1,
           "answer": "240",
-          "correctAnswer": "240",
-          "correct": true,
-          "explanation": "The note asks for the maximum monthly rental price.",
-          "questionText": "Prices range from $105 to ____ per month."
+          "correctAnswer": "239",
+          "correct": false,
+          "explanation": "Furniture rental price range.",
+          "questionText": "Part 1: Prices range from $105 to ____ per month."
         },
         {
           "questionId": "test_listening_1_q2",
@@ -1549,71 +2432,71 @@
           "answer": "modern",
           "correctAnswer": "modern",
           "correct": true,
-          "explanation": "The adjective describes the furniture quality.",
-          "questionText": "The furniture is very ____."
+          "explanation": "Furniture description.",
+          "questionText": "Part 1: The furniture is very ____."
         },
         {
           "questionId": "test_listening_1_q3",
           "number": 3,
           "answer": "delivery",
-          "correctAnswer": "delivery",
-          "correct": true,
-          "explanation": "The special offer concerns delivery.",
-          "questionText": "Free ____ with every living room set."
+          "correctAnswer": "lamp",
+          "correct": false,
+          "explanation": "Special offer item.",
+          "questionText": "Part 1: Free ____ with every living room set."
         },
         {
           "questionId": "test_listening_1_q4",
           "number": 4,
           "answer": "Smith",
-          "correctAnswer": "Smith",
-          "correct": true,
-          "explanation": "The company name completes the note.",
-          "questionText": "Company name: ____ and Oliver."
+          "correctAnswer": "Aaron",
+          "correct": false,
+          "explanation": "Company name.",
+          "questionText": "Part 1: Company name: ____ and Oliver."
         },
         {
           "questionId": "test_listening_1_q5",
           "number": 5,
           "answer": "insurance",
-          "correctAnswer": "insurance",
-          "correct": true,
-          "explanation": "The monthly fee is for insurance.",
-          "questionText": "12% monthly fee for ____."
+          "correctAnswer": "damage",
+          "correct": false,
+          "explanation": "Monthly fee covers damage.",
+          "questionText": "Part 1: 12% monthly fee for ____."
         },
         {
           "questionId": "test_listening_1_q6",
           "number": 6,
           "answer": "electrical",
-          "correctAnswer": "electrical",
-          "correct": true,
-          "explanation": "The category is electrical items.",
-          "questionText": "Cheapest prices for renting furniture and ____ items."
+          "correctAnswer": "electronic",
+          "correct": false,
+          "explanation": "Item category.",
+          "questionText": "Part 1: Cheapest prices for renting furniture and ____ items."
         },
         {
           "questionId": "test_listening_1_q7",
           "number": 7,
           "answer": "transport",
-          "correctAnswer": "transport",
-          "correct": true,
-          "explanation": "Customers need transport.",
-          "questionText": "Must have own ____."
+          "correctAnswer": "insurance",
+          "correct": false,
+          "explanation": "Customer requirement.",
+          "questionText": "Part 1: Must have own ____."
         },
         {
           "questionId": "test_listening_1_q8",
           "number": 8,
           "answer": "City",
-          "correctAnswer": "City",
-          "correct": true,
-          "explanation": "The company name is City Rentals.",
-          "questionText": "____ Rentals."
+          "correctAnswer": "Space",
+          "correct": false,
+          "explanation": "Company name.",
+          "questionText": "Part 1: ____ Rentals."
         },
         {
           "questionId": "test_listening_1_q9",
           "number": 9,
           "answer": "website",
-          "correctAnswer": "website",
-          "correct": true,
-          "explanation": "Prices are updated online.",
-          "questionText": "See the ____ for the most up-to-date prices."
+          "correctAnswer": "app",
+          "correct": false,
+          "explanation": "Where prices are updated.",
+          "questionText": "Part 1: See the ____ for the most up-to-date prices."
         },
         {
           "questionId": "test_listening_1_q10",
@@ -1621,8 +2504,278 @@
           "answer": "exchanges",
           "correctAnswer": "exchanges",
           "correct": true,
-          "explanation": "The policy allows exchanges.",
-          "questionText": "____ are allowed within 7 days of delivery."
+          "explanation": "Delivery policy.",
+          "questionText": "Part 1: ____ are allowed within 7 days of delivery."
+        },
+        {
+          "questionId": "test_listening_1_q11",
+          "number": 11,
+          "answer": "",
+          "correctAnswer": "B. A national charity",
+          "correct": false,
+          "explanation": "Project origin.",
+          "questionText": "Part 2: Who was responsible for starting the community project?"
+        },
+        {
+          "questionId": "test_listening_1_q12",
+          "number": 12,
+          "answer": "",
+          "correctAnswer": "A. Heavy rain had removed some of the soil",
+          "correct": false,
+          "explanation": "Discovery method.",
+          "questionText": "Part 2: How was the gold coin found?"
+        },
+        {
+          "questionId": "test_listening_1_q13",
+          "number": 13,
+          "answer": "",
+          "correctAnswer": "A. The lucky discovery of old records",
+          "correct": false,
+          "explanation": "Evidence for the village.",
+          "questionText": "Part 2: What led archaeologists to believe there was an ancient village on this site?"
+        },
+        {
+          "questionId": "test_listening_1_q14",
+          "number": 14,
+          "answer": "",
+          "correctAnswer": "C. Pieces of jewellery",
+          "correct": false,
+          "explanation": "Remaining target find.",
+          "questionText": "Part 2: What are the team still hoping to find?"
+        },
+        {
+          "questionId": "test_listening_1_q15",
+          "number": 15,
+          "answer": "",
+          "correctAnswer": "B. The outline of fields",
+          "correct": false,
+          "explanation": "Find across the river.",
+          "questionText": "Part 2: What was found on the other side of the river to the castle?"
+        },
+        {
+          "questionId": "test_listening_1_q16",
+          "number": 16,
+          "answer": "",
+          "correctAnswer": "C. Start to organize school visits",
+          "correct": false,
+          "explanation": "Next planned activity.",
+          "questionText": "Part 2: What do the team plan to do after work ends this summer?"
+        },
+        {
+          "questionId": "test_listening_1_q17",
+          "number": 17,
+          "answer": "",
+          "correctAnswer": "B",
+          "correct": false,
+          "explanation": "Map label.",
+          "questionText": "Part 2 map: Bridge foundations. Write the correct letter A-G."
+        },
+        {
+          "questionId": "test_listening_1_q18",
+          "number": 18,
+          "answer": "",
+          "correctAnswer": "A",
+          "correct": false,
+          "explanation": "Map label.",
+          "questionText": "Part 2 map: Rubbish pit. Write the correct letter A-G."
+        },
+        {
+          "questionId": "test_listening_1_q19",
+          "number": 19,
+          "answer": "",
+          "correctAnswer": "G",
+          "correct": false,
+          "explanation": "Map label.",
+          "questionText": "Part 2 map: Meeting hall. Write the correct letter A-G."
+        },
+        {
+          "questionId": "test_listening_1_q20",
+          "number": 20,
+          "answer": "",
+          "correctAnswer": "E",
+          "correct": false,
+          "explanation": "Map label.",
+          "questionText": "Part 2 map: Fish pond. Write the correct letter A-G."
+        },
+        {
+          "questionId": "test_listening_1_q21",
+          "number": 21,
+          "answer": "",
+          "correctAnswer": "B. had not been chosen by other students",
+          "correct": false,
+          "explanation": "Theatre programmes project.",
+          "questionText": "Part 3: Finn was pleased to discover that their topic..."
+        },
+        {
+          "questionId": "test_listening_1_q22",
+          "number": 22,
+          "answer": "",
+          "correctAnswer": "A. theatres pay companies to produce them",
+          "correct": false,
+          "explanation": "Common misconception.",
+          "questionText": "Part 3: Maya says a mistaken belief about theatre programmes is that..."
+        },
+        {
+          "questionId": "test_listening_1_q23",
+          "number": 23,
+          "answer": "",
+          "correctAnswer": "C. were seen as a kind of contract",
+          "correct": false,
+          "explanation": "Historical role.",
+          "questionText": "Part 3: Finn was surprised that, in early British theatre, programmes..."
+        },
+        {
+          "questionId": "test_listening_1_q24",
+          "number": 24,
+          "answer": "",
+          "correctAnswer": "A. promoted their own plays",
+          "correct": false,
+          "explanation": "Project explanation.",
+          "questionText": "Part 3: Maya feels their project should explain why companies of actors..."
+        },
+        {
+          "questionId": "test_listening_1_q25",
+          "number": 25,
+          "answer": "",
+          "correctAnswer": "C. more informative",
+          "correct": false,
+          "explanation": "Comparison.",
+          "questionText": "Part 3: Compared to nineteenth-century programmes, eighteenth-century programmes were..."
+        },
+        {
+          "questionId": "test_listening_1_q26",
+          "number": 26,
+          "answer": "",
+          "correctAnswer": "B. British theatre programmes failed to develop for so long",
+          "correct": false,
+          "explanation": "Twentieth-century issue.",
+          "questionText": "Part 3: Maya does not fully understand why, in the twentieth century..."
+        },
+        {
+          "questionId": "test_listening_1_q27",
+          "number": 27,
+          "answer": "",
+          "correctAnswer": "F. It resembles an artwork",
+          "correct": false,
+          "explanation": "Programme comment.",
+          "questionText": "Part 3 shows: Ruy Blas. Choose the comment A-F."
+        },
+        {
+          "questionId": "test_listening_1_q28",
+          "number": 28,
+          "answer": "",
+          "correctAnswer": "E. It contains insights into the show",
+          "correct": false,
+          "explanation": "Programme comment.",
+          "questionText": "Part 3 shows: Man of La Mancha. Choose the comment A-F."
+        },
+        {
+          "questionId": "test_listening_1_q29",
+          "number": 29,
+          "answer": "",
+          "correctAnswer": "B. It is historically significant for a country",
+          "correct": false,
+          "explanation": "Programme comment.",
+          "questionText": "Part 3 shows: The Tragedy of Jane Shore. Choose the comment A-F."
+        },
+        {
+          "questionId": "test_listening_1_q30",
+          "number": 30,
+          "answer": "",
+          "correctAnswer": "D. It is included in a recent project",
+          "correct": false,
+          "explanation": "Programme comment.",
+          "questionText": "Part 3 shows: The Sailors' Festival. Choose the comment A-F."
+        },
+        {
+          "questionId": "test_listening_1_q31",
+          "number": 31,
+          "answer": "",
+          "correctAnswer": "adaptation",
+          "correct": false,
+          "explanation": "Definition of inclusive design.",
+          "questionText": "Part 4: Products can be accessed without the need for any ____."
+        },
+        {
+          "questionId": "test_listening_1_q32",
+          "number": 32,
+          "answer": "",
+          "correctAnswer": "cognitive",
+          "correct": false,
+          "explanation": "Universal design scope.",
+          "questionText": "Part 4: Universal design includes catering for people with ____ problems."
+        },
+        {
+          "questionId": "test_listening_1_q33",
+          "number": 33,
+          "answer": "",
+          "correctAnswer": "desks",
+          "correct": false,
+          "explanation": "Adjustable workplace item.",
+          "questionText": "Part 4: ____ which are adjustable, avoiding back or neck problems."
+        },
+        {
+          "questionId": "test_listening_1_q34",
+          "number": 34,
+          "answer": "",
+          "correctAnswer": "taps",
+          "correct": false,
+          "explanation": "Public toilet design.",
+          "questionText": "Part 4: ____ in public toilets which are easier to use."
+        },
+        {
+          "questionId": "test_listening_1_q35",
+          "number": 35,
+          "answer": "",
+          "correctAnswer": "blue",
+          "correct": false,
+          "explanation": "Interface colour.",
+          "questionText": "Part 4: Designers avoid using ____ in interfaces."
+        },
+        {
+          "questionId": "test_listening_1_q36",
+          "number": 36,
+          "answer": "",
+          "correctAnswer": "voice",
+          "correct": false,
+          "explanation": "Input method.",
+          "questionText": "Part 4: People can make commands using a mouse, keyboard or their ____."
+        },
+        {
+          "questionId": "test_listening_1_q37",
+          "number": 37,
+          "answer": "",
+          "correctAnswer": "pregnant",
+          "correct": false,
+          "explanation": "Safety concern.",
+          "questionText": "Part 4: Seat belts are especially problematic for ____ women."
+        },
+        {
+          "questionId": "test_listening_1_q38",
+          "number": 38,
+          "answer": "",
+          "correctAnswer": "shoulders",
+          "correct": false,
+          "explanation": "PPE fit issue.",
+          "questionText": "Part 4: PPE jackets are often unsuitable because of the size of women's ____."
+        },
+        {
+          "questionId": "test_listening_1_q39",
+          "number": 39,
+          "answer": "",
+          "correctAnswer": "police",
+          "correct": false,
+          "explanation": "Emergency service role.",
+          "questionText": "Part 4: PPE for female ____ officers dealing with emergencies is the worst."
+        },
+        {
+          "questionId": "test_listening_1_q40",
+          "number": 40,
+          "answer": "",
+          "correctAnswer": "temperature",
+          "correct": false,
+          "explanation": "Workplace comfort issue.",
+          "questionText": "Part 4: The ____ in offices is often too low for women."
         }
       ],
       "reviewedBy": "usr_8f87bb915173ab8d",
@@ -1658,7 +2811,7 @@
           "correctAnswer": "potatoes",
           "correct": true,
           "explanation": "The Andean method preserved potatoes.",
-          "questionText": "People conserved the nutritional value of ____ using freezing and drying."
+          "questionText": "Passage 1: People conserved the nutritional value of ____ using a method of freezing then drying."
         },
         {
           "questionId": "test_reading_1_q2",
@@ -1666,8 +2819,8 @@
           "answer": "butter",
           "correctAnswer": "butter",
           "correct": true,
-          "explanation": "The passage names butter sent by rail.",
-          "questionText": "____ was kept cool by ice in specially adapted trains."
+          "explanation": "Butter was sent in insulated rail cars.",
+          "questionText": "Passage 1: ____ was kept cool by ice during transportation in specially adapted trains."
         },
         {
           "questionId": "test_reading_1_q3",
@@ -1675,8 +2828,8 @@
           "answer": "meat",
           "correctAnswer": "meat",
           "correct": true,
-          "explanation": "Beef and mutton are both meat.",
-          "questionText": "Two kinds of ____ were first shipped frozen to England."
+          "explanation": "Beef and mutton are two kinds of meat.",
+          "questionText": "Passage 1: Two kinds of ____ were the first frozen food shipped to England."
         },
         {
           "questionId": "test_reading_1_q4",
@@ -1684,17 +2837,17 @@
           "answer": "crystals",
           "correctAnswer": "crystals",
           "correct": true,
-          "explanation": "Crystals caused flavor and texture damage.",
-          "questionText": "Quick freezing reduced damage caused by ____."
+          "explanation": "Quick freezing reduced damage caused by crystals.",
+          "questionText": "Passage 1: Quick-freezing methods meant ____ did not spoil the food."
         },
         {
           "questionId": "test_reading_1_q5",
           "number": 5,
           "answer": "quality",
-          "correctAnswer": "quality",
-          "correct": true,
-          "explanation": "Transparent packaging showed quality.",
-          "questionText": "Cellophane let customers see the ____."
+          "correctAnswer": "cellophane",
+          "correct": false,
+          "explanation": "Cellophane was transparent packaging.",
+          "questionText": "Passage 1: Birdseye packaged products with ____ so the product was visible."
         },
         {
           "questionId": "test_reading_1_q6",
@@ -1702,8 +2855,8 @@
           "answer": "tin",
           "correctAnswer": "tin",
           "correct": true,
-          "explanation": "Tin was reserved for wartime munitions.",
-          "questionText": "Frozen food became popular because of a shortage of ____."
+          "explanation": "Tin was needed for munitions.",
+          "questionText": "Passage 1: Frozen food became popular because of a shortage of ____."
         },
         {
           "questionId": "test_reading_1_q7",
@@ -1711,35 +2864,305 @@
           "answer": "refrigerator",
           "correctAnswer": "refrigerator",
           "correct": true,
-          "explanation": "The passage describes affordable refrigerators.",
-          "questionText": "By the 1950s many homes had a ____."
+          "explanation": "Many US families owned a refrigerator.",
+          "questionText": "Passage 1: In the 1950s, a large number of homes now had a ____."
         },
         {
           "questionId": "test_reading_1_q8",
           "number": 8,
           "answer": "TRUE",
-          "correctAnswer": "TRUE",
-          "correct": true,
-          "explanation": "The passage says flavor and texture deteriorated.",
-          "questionText": "Australian freezing affected the taste of food."
+          "correctAnswer": "NOT GIVEN",
+          "correct": false,
+          "explanation": "The passage does not say whether they became wealthy.",
+          "questionText": "Passage 1: The ice transportation business made some Boston ship owners very wealthy in the early 1800s."
         },
         {
           "questionId": "test_reading_1_q9",
           "number": 9,
           "answer": "FALSE",
-          "correctAnswer": "FALSE",
-          "correct": true,
-          "explanation": "He went there to trap and trade furs.",
-          "questionText": "Birdseye went to Labrador specifically to learn freezing techniques."
+          "correctAnswer": "TRUE",
+          "correct": false,
+          "explanation": "The passage says the process spoilt flavor and texture.",
+          "questionText": "Passage 1: A disadvantage of the freezing process invented in Australia was that it affected the taste of food."
         },
         {
           "questionId": "test_reading_1_q10",
           "number": 10,
           "answer": "TRUE",
+          "correctAnswer": "FALSE",
+          "correct": false,
+          "explanation": "He went to trap and trade furs.",
+          "questionText": "Passage 1: Clarence Birdseye travelled to Labrador in order to learn how the Inuit people froze fish."
+        },
+        {
+          "questionId": "test_reading_1_q11",
+          "number": 11,
+          "answer": "",
           "correctAnswer": "TRUE",
-          "correct": true,
+          "correct": false,
           "explanation": "The passage mentions a huge advertising budget.",
-          "questionText": "Swanson spent heavily to promote the TV Dinner."
+          "questionText": "Passage 1: Swanson Foods invested a great deal of money in the promotion of the TV Dinner."
+        },
+        {
+          "questionId": "test_reading_1_q12",
+          "number": 12,
+          "answer": "",
+          "correctAnswer": "FALSE",
+          "correct": false,
+          "explanation": "The tray was the same type used by airlines.",
+          "questionText": "Passage 1: Swanson Foods developed a new style of container for the launch of the TV Dinner."
+        },
+        {
+          "questionId": "test_reading_1_q13",
+          "number": 13,
+          "answer": "",
+          "correctAnswer": "NOT GIVEN",
+          "correct": false,
+          "explanation": "The passage gives turnover figures but no global comparison.",
+          "questionText": "Passage 1: The US frozen food industry is currently the largest in the world."
+        },
+        {
+          "questionId": "test_reading_1_q14",
+          "number": 14,
+          "answer": "",
+          "correctAnswer": "v. two clear educational goals",
+          "correct": false,
+          "explanation": "The section describes showing reef beauty and highlighting conservation.",
+          "questionText": "Passage 2: Choose the correct heading for Section A."
+        },
+        {
+          "questionId": "test_reading_1_q15",
+          "number": 15,
+          "answer": "",
+          "correctAnswer": "ii. cooperation beneath the waves",
+          "correct": false,
+          "explanation": "The section explains the symbiotic relationship between corals and algae.",
+          "questionText": "Passage 2: Choose the correct heading for Section B."
+        },
+        {
+          "questionId": "test_reading_1_q16",
+          "number": 16,
+          "answer": "",
+          "correctAnswer": "iv. disagreement about the accuracy of a certain phrase",
+          "correct": false,
+          "explanation": "The section discusses the disputed phrase rainforests of the sea.",
+          "questionText": "Passage 2: Choose the correct heading for Section C."
+        },
+        {
+          "questionId": "test_reading_1_q17",
+          "number": 17,
+          "answer": "",
+          "correctAnswer": "vii. A warning of further trouble ahead",
+          "correct": false,
+          "explanation": "The section warns of reef loss by 2050.",
+          "questionText": "Passage 2: Choose the correct heading for Section D."
+        },
+        {
+          "questionId": "test_reading_1_q18",
+          "number": 18,
+          "answer": "",
+          "correctAnswer": "iii. working to lessen the problems",
+          "correct": false,
+          "explanation": "The section describes research to help reefs survive.",
+          "questionText": "Passage 2: Choose the correct heading for Section E."
+        },
+        {
+          "questionId": "test_reading_1_q19",
+          "number": 19,
+          "answer": "",
+          "correctAnswer": "vi. promoting hope",
+          "correct": false,
+          "explanation": "The section says progress can encourage public hope.",
+          "questionText": "Passage 2: Choose the correct heading for Section F."
+        },
+        {
+          "questionId": "test_reading_1_q20",
+          "number": 20,
+          "answer": "",
+          "correctAnswer": "C, E",
+          "correct": false,
+          "explanation": "Pollution by humans and ocean current changes are mentioned.",
+          "questionText": "Passage 2: Which TWO causes of damage to coral reefs are mentioned? Write both letters, e.g. C, E."
+        },
+        {
+          "questionId": "test_reading_1_q21",
+          "number": 21,
+          "answer": "",
+          "correctAnswer": "C, E",
+          "correct": false,
+          "explanation": "This pair completes Questions 20 and 21.",
+          "questionText": "Passage 2: Which TWO causes of damage to coral reefs are mentioned? Write the same two letters as Question 20."
+        },
+        {
+          "questionId": "test_reading_1_q22",
+          "number": 22,
+          "answer": "",
+          "correctAnswer": "B, D",
+          "correct": false,
+          "explanation": "They want to identify hardy corals and increase breeding rates.",
+          "questionText": "Passage 2: Which TWO statements are true of the researchers at London Zoo? Write both letters, e.g. B, D."
+        },
+        {
+          "questionId": "test_reading_1_q23",
+          "number": 23,
+          "answer": "",
+          "correctAnswer": "B, D",
+          "correct": false,
+          "explanation": "This pair completes Questions 22 and 23.",
+          "questionText": "Passage 2: Which TWO statements are true of the researchers at London Zoo? Write the same two letters as Question 22."
+        },
+        {
+          "questionId": "test_reading_1_q24",
+          "number": 24,
+          "answer": "",
+          "correctAnswer": "tentacles",
+          "correct": false,
+          "explanation": "Polyps have tentacles for capturing food.",
+          "questionText": "Passage 2: Corals have a number of ____ which they use to collect their food."
+        },
+        {
+          "questionId": "test_reading_1_q25",
+          "number": 25,
+          "answer": "",
+          "correctAnswer": "protection",
+          "correct": false,
+          "explanation": "The algae get protection from the coral.",
+          "questionText": "Passage 2: Algae gain ____ from being inside the coral."
+        },
+        {
+          "questionId": "test_reading_1_q26",
+          "number": 26,
+          "answer": "",
+          "correctAnswer": "colour",
+          "correct": false,
+          "explanation": "Bleaching strips reefs of their colour.",
+          "questionText": "Passage 2: Increases in the warmth of the sea water can remove the ____ from coral."
+        },
+        {
+          "questionId": "test_reading_1_q27",
+          "number": 27,
+          "answer": "",
+          "correctAnswer": "A. Martin Rees",
+          "correct": false,
+          "explanation": "Rees says robots should lack the capacity to outwit us.",
+          "questionText": "Passage 3: For our own safety, humans will need to restrict the abilities of robots."
+        },
+        {
+          "questionId": "test_reading_1_q28",
+          "number": 28,
+          "answer": "",
+          "correctAnswer": "C. Kathleen Richardson",
+          "correct": false,
+          "explanation": "Richardson says robots have not shown themselves to be a threat.",
+          "questionText": "Passage 3: The risk of robots harming us is less serious than humans believe it to be."
+        },
+        {
+          "questionId": "test_reading_1_q29",
+          "number": 29,
+          "answer": "",
+          "correctAnswer": "B. Daniel Wolpert",
+          "correct": false,
+          "explanation": "Wolpert says human-level creative intelligence within 50 years is highly ambitious.",
+          "questionText": "Passage 3: It will take many decades for robot intelligence to be as imaginative as human intelligence."
+        },
+        {
+          "questionId": "test_reading_1_q30",
+          "number": 30,
+          "answer": "",
+          "correctAnswer": "A. Martin Rees",
+          "correct": false,
+          "explanation": "Rees raises moral questions about exploiting sophisticated robots.",
+          "questionText": "Passage 3: We may have to start considering whether we are treating robots fairly."
+        },
+        {
+          "questionId": "test_reading_1_q31",
+          "number": 31,
+          "answer": "",
+          "correctAnswer": "B. Daniel Wolpert",
+          "correct": false,
+          "explanation": "Wolpert says gathering resources nearer to home is a better use.",
+          "questionText": "Passage 3: Robots are probably of more help to us on Earth than in space."
+        },
+        {
+          "questionId": "test_reading_1_q32",
+          "number": 32,
+          "answer": "",
+          "correctAnswer": "A. Martin Rees",
+          "correct": false,
+          "explanation": "Rees recommends first-rate science fiction over second-rate science.",
+          "questionText": "Passage 3: High-quality science fiction may be just as accurate as mediocre scientists."
+        },
+        {
+          "questionId": "test_reading_1_q33",
+          "number": 33,
+          "answer": "",
+          "correctAnswer": "C. Kathleen Richardson",
+          "correct": false,
+          "explanation": "Richardson says many people welcome machine intelligence.",
+          "questionText": "Passage 3: There are those who look forward to robots developing greater intelligence."
+        },
+        {
+          "questionId": "test_reading_1_q34",
+          "number": 34,
+          "answer": "",
+          "correctAnswer": "C. changes made to other planets for our own benefit",
+          "correct": false,
+          "explanation": "Both raise ethical concerns about changing or imposing on other planets.",
+          "questionText": "Passage 3: Richardson and Rees express similar views regarding the ethical aspect of..."
+        },
+        {
+          "questionId": "test_reading_1_q35",
+          "number": 35,
+          "answer": "",
+          "correctAnswer": "B. advances made in machine intelligence so far",
+          "correct": false,
+          "explanation": "Both identify current limits of machine intelligence.",
+          "questionText": "Passage 3: Rees and Wolpert share an opinion about the extent of..."
+        },
+        {
+          "questionId": "test_reading_1_q36",
+          "number": 36,
+          "answer": "",
+          "correctAnswer": "D. the harm already done by artificial intelligence",
+          "correct": false,
+          "explanation": "Wolpert cites computer viruses; Richardson says robots have not challenged humans.",
+          "questionText": "Passage 3: Wolpert disagrees with Richardson on the question of..."
+        },
+        {
+          "questionId": "test_reading_1_q37",
+          "number": 37,
+          "answer": "",
+          "correctAnswer": "B. It is the result of our inclination to attribute human characteristics to non-human entities",
+          "correct": false,
+          "explanation": "Richardson refers to personifying inanimate objects.",
+          "questionText": "Passage 3: What point does Richardson make about fear of machines?"
+        },
+        {
+          "questionId": "test_reading_1_q38",
+          "number": 38,
+          "answer": "",
+          "correctAnswer": "C. artificial intelligence developing independent thought",
+          "correct": false,
+          "explanation": "Rees worries about a network behaving like a brain with its own goals.",
+          "questionText": "Passage 3: What potential advance does Rees see as a cause for concern?"
+        },
+        {
+          "questionId": "test_reading_1_q39",
+          "number": 39,
+          "answer": "",
+          "correctAnswer": "B. how fundamental robots are to the science fiction genre",
+          "correct": false,
+          "explanation": "Wolpert says almost no science fiction imagines a future without robots.",
+          "questionText": "Passage 3: What does Wolpert emphasise in his response to the question about science fiction?"
+        },
+        {
+          "questionId": "test_reading_1_q40",
+          "number": 40,
+          "answer": "",
+          "correctAnswer": "C. recommending a change of approach in how people view them",
+          "correct": false,
+          "explanation": "Richardson says different understandings need to be brought together.",
+          "questionText": "Passage 3: What is Richardson doing in her comment about reality and fantasy?"
         }
       ],
       "reviewedBy": "usr_8f87bb915173ab8d",
