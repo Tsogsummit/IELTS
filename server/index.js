@@ -15,7 +15,6 @@ const COOKIE = "bandprep_session";
 const EXAM_DATE = process.env.EXAM_DATE || "2026-05-20";
 const EXAM_TZ_OFFSET = process.env.EXAM_TZ_OFFSET || "+08:00";
 const sessions = new Map();
-const loginHits = new Map();
 
 const disclaimer = "This website is an independent IELTS practice platform. It is not affiliated with IELTS, British Council, IDP, or Cambridge.";
 
@@ -147,6 +146,150 @@ function scheduleWindow(startTime, endTime) {
     startsAt: `${EXAM_DATE}T${startTime}:00${EXAM_TZ_OFFSET}`,
     endsAt: `${EXAM_DATE}T${endTime}:00${EXAM_TZ_OFFSET}`
   };
+}
+
+function ensureCollections(db) {
+  if (!Array.isArray(db.submissions)) db.submissions = [];
+  if (!Array.isArray(db.testAttempts)) db.testAttempts = [];
+  if (!Array.isArray(db.graderAssignments)) db.graderAssignments = [];
+  if (!Array.isArray(db.writingGrades)) db.writingGrades = [];
+  if (!Array.isArray(db.speakingGrades)) db.speakingGrades = [];
+  if (!Array.isArray(db.credentialBatches)) db.credentialBatches = [];
+  return db;
+}
+
+function getActiveAttempt(db, userId, testId) {
+  for (let i = db.testAttempts.length - 1; i >= 0; i--) {
+    const attempt = db.testAttempts[i];
+    if (attempt.userId === userId && attempt.testId === testId && !attempt.submittedAt && !attempt.submissionId) return attempt;
+  }
+  return null;
+}
+
+function latestSubmissionFor(db, userId, testId) {
+  for (let i = db.submissions.length - 1; i >= 0; i--) {
+    const submission = db.submissions[i];
+    if (submission.userId === userId && submission.testId === testId) return submission;
+  }
+  return null;
+}
+
+function publicAttempt(attempt) {
+  if (!attempt) return null;
+  return {
+    id: attempt.id,
+    testId: attempt.testId,
+    type: attempt.type,
+    startedAt: attempt.startedAt,
+    expiresAt: attempt.expiresAt,
+    lastSavedAt: attempt.lastSavedAt,
+    submittedAt: attempt.submittedAt || null,
+    submissionId: attempt.submissionId || null,
+    status: attempt.status || "in_progress",
+    answers: attempt.answers || {},
+    draft: attempt.draft || {}
+  };
+}
+
+function activeAttemptSummary(attempt) {
+  if (!attempt) return null;
+  return {
+    id: attempt.id,
+    startedAt: attempt.startedAt,
+    expiresAt: attempt.expiresAt,
+    lastSavedAt: attempt.lastSavedAt,
+    status: attempt.status || "in_progress",
+    secondsRemaining: Math.max(0, Math.ceil((new Date(attempt.expiresAt).getTime() - Date.now()) / 1000))
+  };
+}
+
+function createAttempt(db, user, test) {
+  const createdAt = now();
+  const attempt = {
+    id: id("attempt"),
+    userId: user.id,
+    testId: test.id,
+    type: test.type,
+    startedAt: createdAt,
+    expiresAt: new Date(Date.now() + Number(test.duration || 0) * 60 * 1000).toISOString(),
+    lastSavedAt: createdAt,
+    answers: {},
+    draft: {},
+    status: "in_progress"
+  };
+  db.testAttempts.push(attempt);
+  return attempt;
+}
+
+function timeSpentForAttempt(attempt) {
+  const started = new Date(attempt.startedAt).getTime();
+  const ended = new Date(attempt.submittedAt || now()).getTime();
+  return Math.max(0, Math.round((ended - started) / 1000));
+}
+
+function buildSubmissionFromAttempt(test, attempt) {
+  const base = {
+    id: id("sub"),
+    userId: attempt.userId,
+    testId: test.id,
+    attemptId: attempt.id,
+    type: test.type,
+    answers: attempt.answers || {},
+    timeSpent: timeSpentForAttempt(attempt),
+    submittedAt: attempt.submittedAt || now(),
+    status: "Pending Review"
+  };
+  if (["listening", "reading"].includes(test.type)) {
+    const result = scoreAnswers(test, attempt.answers || {});
+    Object.assign(base, { score: result.score, estimatedBand: result.estimatedBand, details: result.details, status: "Returned to Student" });
+  } else if (test.type === "writing") {
+    Object.assign(base, {
+      score: null,
+      estimatedBand: null,
+      task1Answer: attempt.draft?.task1 || "",
+      task2Answer: attempt.draft?.task2 || "",
+      audioUrl: ""
+    });
+  } else if (test.type === "speaking") {
+    Object.assign(base, {
+      score: null,
+      estimatedBand: null,
+      answers: attempt.draft || {},
+      audioUrl: attempt.draft?.audioUrl || ""
+    });
+  } else {
+    Object.assign(base, { score: null, estimatedBand: null });
+  }
+  return base;
+}
+
+function finalizeAttempt(db, attempt, reason = "manual_submit") {
+  if (!attempt) return null;
+  if (attempt.submissionId) return db.submissions.find((s) => s.id === attempt.submissionId) || null;
+  const test = db.tests.find((t) => t.id === attempt.testId);
+  if (!test) return null;
+  attempt.submittedAt = now();
+  attempt.lastSavedAt = attempt.submittedAt;
+  attempt.status = "submitted";
+  attempt.finalizedReason = reason;
+  const submission = buildSubmissionFromAttempt(test, attempt);
+  attempt.submissionId = submission.id;
+  db.submissions.push(submission);
+  return submission;
+}
+
+function finalizeOverdueAttempts(db) {
+  let changed = false;
+  const current = Date.now();
+  for (const attempt of db.testAttempts) {
+    if (attempt.submittedAt || attempt.submissionId) continue;
+    const expiresAt = new Date(attempt.expiresAt).getTime();
+    if (Number.isFinite(expiresAt) && current >= expiresAt) {
+      const submission = finalizeAttempt(db, attempt, "time_expired");
+      if (submission) changed = true;
+    }
+  }
+  return changed;
 }
 
 function roundIeltsAverage(scores) {
@@ -431,6 +574,7 @@ function seedDb() {
     studentClasses: [...classes].sort().map((className) => ({ id: id("class"), className, description: "Grade 11 IELTS mock cohort", createdAt: now() })),
     tests: sampleTests(),
     submissions: [],
+    testAttempts: [],
     graderAssignments: [],
     writingGrades: [],
     speakingGrades: [],
@@ -449,7 +593,7 @@ function ensureDb() {
 
 function readDb() {
   ensureDb();
-  return JSON.parse(fs.readFileSync(DB_FILE, "utf8"));
+  return ensureCollections(JSON.parse(fs.readFileSync(DB_FILE, "utf8")));
 }
 
 function writeDb(db) {
@@ -526,17 +670,14 @@ async function api(req, res) {
   const db = readDb();
   const url = new URL(req.url, `http://${req.headers.host}`);
   const method = req.method;
+  const pathParts = url.pathname.split("/").filter(Boolean);
+
+  if (finalizeOverdueAttempts(db)) writeDb(db);
 
   if (method === "POST" && url.pathname === "/api/auth/login") {
-    const ip = req.socket.remoteAddress || "local";
-    const hits = loginHits.get(ip) || [];
-    const recent = hits.filter((t) => Date.now() - t < 15 * 60 * 1000);
-    if (recent.length > 20) return send(res, 429, { error: "Too many login attempts. Try again later." });
     const body = await parseBody(req);
     const user = db.users.find((u) => u.username === body.username && u.isActive);
     if (!user || !verifyPassword(body.password, user.passwordHash)) {
-      recent.push(Date.now());
-      loginHits.set(ip, recent);
       return send(res, 401, { error: "Invalid username or password" });
     }
     const token = crypto.randomBytes(32).toString("hex");
@@ -561,20 +702,79 @@ async function api(req, res) {
   if (method === "GET" && url.pathname === "/api/tests") {
     const user = requireRole(req, res, db, ["super_admin", "admin", "grader", "student"]);
     if (!user) return;
-    return send(res, 200, { tests: db.tests.map(({ questions, ...test }) => ({ ...test, questionCount: questions.length, scheduleStatus: scheduledStatus(test) })) });
+    return send(res, 200, {
+      tests: db.tests.map(({ questions, ...test }) => ({
+        ...test,
+        questionCount: questions.length,
+        scheduleStatus: scheduledStatus(test),
+        activeAttempt: user.role === "student" ? activeAttemptSummary(getActiveAttempt(db, user.id, test.id)) : null,
+        hasSubmitted: user.role === "student" ? Boolean(latestSubmissionFor(db, user.id, test.id)) : false
+      }))
+    });
   }
 
-  if (method === "GET" && url.pathname.startsWith("/api/tests/")) {
+  if (method === "GET" && pathParts[0] === "api" && pathParts[1] === "tests" && pathParts.length === 3) {
     const user = requireRole(req, res, db, ["super_admin", "admin", "student"]);
     if (!user) return;
-    const test = db.tests.find((t) => t.id === url.pathname.split("/").pop());
+    const test = db.tests.find((t) => t.id === pathParts[2]);
     if (!test) return send(res, 404, { error: "Test not found" });
     const status = scheduledStatus(test);
-    if (user.role === "student" && !canBypassSchedule(user) && status.scheduled && !status.available) {
+    let attempt = user.role === "student" ? getActiveAttempt(db, user.id, test.id) : null;
+    const previousSubmission = user.role === "student" ? latestSubmissionFor(db, user.id, test.id) : null;
+    const attemptAvailable = attempt && new Date(attempt.expiresAt).getTime() > Date.now();
+    if (user.role === "student" && previousSubmission && !attemptAvailable) {
+      return send(res, 403, { error: "You have already submitted this test", submissionId: previousSubmission.id });
+    }
+    if (user.role === "student" && !attemptAvailable && !canBypassSchedule(user) && status.scheduled && !status.available) {
       return send(res, 403, { error: status.notStarted ? "This test has not started yet" : "This test has ended", scheduleStatus: status });
     }
+    if (user.role === "student" && !attemptAvailable) {
+      attempt = createAttempt(db, user, test);
+      writeDb(db);
+    }
     const sanitized = { ...test, questions: test.questions.map(({ correctAnswer, explanation, ...safe }) => safe) };
-    return send(res, 200, { test: sanitized });
+    return send(res, 200, { test: sanitized, attempt: publicAttempt(attempt) });
+  }
+
+  if (method === "POST" && pathParts[0] === "api" && pathParts[1] === "tests" && pathParts[3] === "progress") {
+    const user = requireRole(req, res, db, ["student", "super_admin", "admin"]);
+    if (!user) return;
+    const test = db.tests.find((t) => t.id === pathParts[2]);
+    if (!test) return send(res, 404, { error: "Test not found" });
+    const previousSubmission = latestSubmissionFor(db, user.id, test.id);
+    if (previousSubmission) return send(res, 403, { error: "You have already submitted this test", submissionId: previousSubmission.id });
+    let attempt = getActiveAttempt(db, user.id, test.id);
+    if (!attempt) attempt = createAttempt(db, user, test);
+    if (Date.now() >= new Date(attempt.expiresAt).getTime()) {
+      const submission = finalizeAttempt(db, attempt, "time_expired");
+      writeDb(db);
+      return send(res, 200, { expired: true, submission });
+    }
+    const body = await parseBody(req);
+    attempt.answers = body.answers && typeof body.answers === "object" ? body.answers : attempt.answers || {};
+    attempt.draft = body.draft && typeof body.draft === "object" ? body.draft : attempt.draft || {};
+    attempt.lastSavedAt = now();
+    writeDb(db);
+    return send(res, 200, { ok: true, attempt: publicAttempt(attempt) });
+  }
+
+  if (method === "POST" && pathParts[0] === "api" && pathParts[1] === "tests" && pathParts[3] === "submit") {
+    const user = requireRole(req, res, db, ["student", "super_admin", "admin"]);
+    if (!user) return;
+    const test = db.tests.find((t) => t.id === pathParts[2]);
+    if (!test) return send(res, 404, { error: "Test not found" });
+    const previousSubmission = latestSubmissionFor(db, user.id, test.id);
+    if (previousSubmission) return send(res, 403, { error: "You have already submitted this test", submissionId: previousSubmission.id });
+    let attempt = getActiveAttempt(db, user.id, test.id);
+    if (!attempt) attempt = createAttempt(db, user, test);
+    const body = await parseBody(req);
+    if (body.answers && typeof body.answers === "object") attempt.answers = body.answers;
+    if (body.draft && typeof body.draft === "object") attempt.draft = body.draft;
+    attempt.lastSavedAt = now();
+    const reason = Date.now() >= new Date(attempt.expiresAt).getTime() ? "time_expired" : "manual_submit";
+    const submission = finalizeAttempt(db, attempt, reason);
+    writeDb(db);
+    return send(res, 201, { submission });
   }
 
   if (method === "POST" && url.pathname === "/api/submissions") {

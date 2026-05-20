@@ -1,5 +1,5 @@
 const h = React.createElement;
-const { useEffect, useMemo, useState } = React;
+const { useEffect, useMemo, useRef, useState } = React;
 
 const DISCLAIMER = "This website is an independent IELTS practice platform. It is not affiliated with IELTS, British Council, IDP, or Cambridge.";
 
@@ -41,8 +41,9 @@ function App() {
   else if (route === "dashboard") page = h(StudentDashboard, { me, go });
   else if (route === "tests") page = h(TestList, { go });
   else if (route.startsWith("take/")) page = h(TestRunner, { testId: route.split("/")[1], go });
+  else if (route.startsWith("submitted/")) page = h(SubmissionConfirmation, { go });
   else if (route === "results") page = h(Results, { me, go });
-  else if (route.startsWith("result/")) page = h(ResultDetail, { id: route.split("/")[1] });
+  else if (route.startsWith("result/")) page = h(ResultDetail, { id: route.split("/")[1], me });
   else if (route === "admin") page = h(AdminDashboard, { me, flash, setFlash });
   else if (route === "grader") page = h(GraderDashboard, { me });
   else page = h(Landing, { go });
@@ -160,13 +161,15 @@ function TestList({ go }) {
         h("span", { className: "badge" }, test.type.replace("_", " ")),
         h("h3", { style: { marginTop: 12 } }, test.title),
         h("p", null, `${test.duration} minutes · ${test.questionCount || "Practice"} questions`),
+        test.hasSubmitted && h("div", { className: "muted" }, "Submitted"),
+        test.activeAttempt && h("div", { className: "muted" }, `In progress · ${Math.max(0, Math.ceil((test.activeAttempt.secondsRemaining || 0) / 60))} min left`),
         test.scheduleStatus?.scheduled && test.startsAt && h("div", { className: "schedule-box" },
           h("strong", null, "Official test window"),
           h("span", null, `Starts: ${formatDateTime(test.startsAt)}`),
           h("span", null, `Ends: ${formatDateTime(test.endsAt)}`),
           h("span", { className: test.scheduleStatus?.available ? "correct" : "muted" }, scheduleLabel(test.scheduleStatus))
         ),
-        h("button", { type: "button", className: `btn ${test.scheduleStatus?.scheduled && !test.scheduleStatus.available ? "disabled" : ""}`, disabled: test.scheduleStatus?.scheduled && !test.scheduleStatus.available, onClick: () => go(`take/${test.id}`) }, test.scheduleStatus?.scheduled && test.scheduleStatus.notStarted ? "Not Started" : test.scheduleStatus?.scheduled && test.scheduleStatus.ended ? "Closed" : "Start")
+        h("button", { type: "button", className: `btn ${test.hasSubmitted || (test.scheduleStatus?.scheduled && !test.scheduleStatus.available && !test.activeAttempt) ? "disabled" : ""}`, disabled: test.hasSubmitted || (test.scheduleStatus?.scheduled && !test.scheduleStatus.available && !test.activeAttempt), onClick: () => go(`take/${test.id}`) }, test.hasSubmitted ? "Submitted" : test.activeAttempt ? "Resume" : test.scheduleStatus?.scheduled && test.scheduleStatus.notStarted ? "Not Started" : test.scheduleStatus?.scheduled && test.scheduleStatus.ended ? "Closed" : "Start")
       )
     ))
   );
@@ -183,45 +186,107 @@ function scheduleLabel(status) {
   return "Closed";
 }
 
-function Timer({ minutes, onEnd }) {
-  const initialLeft = minutes * 60;
-  const [left, setLeft] = useState(initialLeft);
+function Timer({ endsAt, onEnd }) {
+  const firedRef = useRef(false);
+  const calcLeft = () => Math.max(0, Math.ceil((new Date(endsAt).getTime() - Date.now()) / 1000));
+  const [left, setLeft] = useState(calcLeft);
   useEffect(() => {
-    const t = setInterval(() => setLeft((v) => {
-      const next = v - 1;
-      if (next <= 0) { clearInterval(t); onEnd?.(); return 0; }
-      return next;
-    }), 1000);
+    firedRef.current = false;
+    setLeft(calcLeft());
+    const t = setInterval(() => {
+      const next = calcLeft();
+      setLeft(next);
+      if (next <= 0 && !firedRef.current) {
+        firedRef.current = true;
+        clearInterval(t);
+        onEnd?.();
+      }
+    }, 1000);
     return () => clearInterval(t);
-  }, [minutes]);
+  }, [endsAt, onEnd]);
   return h("div", { className: "timer" }, `${String(Math.floor(left / 60)).padStart(2, "0")}:${String(left % 60).padStart(2, "0")}`);
 }
 
 function TestRunner({ testId, go }) {
   const [test, setTest] = useState(null);
-  const [answers, setAnswers] = useState(() => JSON.parse(localStorage.getItem(`answers:${testId}`) || "{}"));
+  const [attempt, setAttempt] = useState(null);
+  const [answers, setAnswers] = useState({});
   const [index, setIndex] = useState(0);
   const [confirm, setConfirm] = useState(false);
-  const [draft, setDraft] = useState(() => JSON.parse(localStorage.getItem(`draft:${testId}`) || "{}"));
+  const [draft, setDraft] = useState({});
   const [loadError, setLoadError] = useState("");
-  useEffect(() => { api(`/api/tests/${testId}`).then((d) => setTest(d.test)).catch((err) => setLoadError(err.message)); }, [testId]);
+  const [loaded, setLoaded] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const saveTimerRef = useRef(null);
+  const localAnswersRef = useRef(() => JSON.parse(localStorage.getItem(`answers:${testId}`) || "{}"));
+  const localDraftRef = useRef(() => JSON.parse(localStorage.getItem(`draft:${testId}`) || "{}"));
+  useEffect(() => {
+    let alive = true;
+    api(`/api/tests/${testId}`).then((d) => {
+      if (!alive) return;
+      const localAnswers = typeof localAnswersRef.current === "function" ? localAnswersRef.current() : {};
+      const localDraft = typeof localDraftRef.current === "function" ? localDraftRef.current() : {};
+      const attemptAnswers = d.attempt?.answers || {};
+      const attemptDraft = d.attempt?.draft || {};
+      setTest(d.test);
+      setAttempt(d.attempt || null);
+      setAnswers(Object.keys(attemptAnswers).length ? attemptAnswers : localAnswers);
+      setDraft(Object.keys(attemptDraft).length ? attemptDraft : localDraft);
+      setLoaded(true);
+    }).catch((err) => {
+      if (!alive) return;
+      setLoadError(err.message);
+    });
+    return () => { alive = false; };
+  }, [testId]);
   useEffect(() => { localStorage.setItem(`answers:${testId}`, JSON.stringify(answers)); }, [answers]);
   useEffect(() => { localStorage.setItem(`draft:${testId}`, JSON.stringify(draft)); }, [draft]);
+  useEffect(() => {
+    if (!loaded || !test || !attempt || submitting) return;
+    clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(async () => {
+      try {
+        const data = await api(`/api/tests/${testId}/progress`, { method: "POST", body: { answers, draft } });
+        if (data.expired && data.submission) {
+          localStorage.removeItem(`answers:${testId}`);
+          localStorage.removeItem(`draft:${testId}`);
+          go(`submitted/${data.submission.id}`);
+          return;
+        }
+        if (data.attempt) setAttempt(data.attempt);
+      } catch {}
+    }, 800);
+    return () => clearTimeout(saveTimerRef.current);
+  }, [answers, attempt, draft, go, loaded, submitting, test, testId]);
+  useEffect(() => {
+    if (!loaded || !attempt || submitting) return;
+    const onBeforeUnload = () => {
+      navigator.sendBeacon(`/api/tests/${testId}/progress`, new Blob([JSON.stringify({ answers, draft })], { type: "application/json" }));
+    };
+    addEventListener("beforeunload", onBeforeUnload);
+    return () => removeEventListener("beforeunload", onBeforeUnload);
+  }, [answers, attempt, draft, loaded, submitting, testId]);
   if (loadError) return h("div", { className: "shell" }, h("div", { className: "error" }, loadError), h("button", { type: "button", className: "btn secondary", onClick: () => go("tests"), style: { marginTop: 14 } }, "Back to Tests"));
   if (!test) return h("div", { className: "shell" }, "Loading test...");
 
   const submit = async () => {
-    const payload = test.type === "writing" ? { testId, task1Answer: draft.task1 || "", task2Answer: draft.task2 || "", answers: {} }
-      : test.type === "speaking" ? { testId, answers: draft, audioUrl: draft.audioUrl || "" }
-      : { testId, answers, timeSpent: 0 };
-    const data = await api("/api/submissions", { method: "POST", body: payload });
-    localStorage.removeItem(`answers:${testId}`);
-    go(`result/${data.submission.id}`);
+    if (submitting) return;
+    try {
+      setSubmitting(true);
+      clearTimeout(saveTimerRef.current);
+      const data = await api(`/api/tests/${testId}/submit`, { method: "POST", body: { answers, draft } });
+      localStorage.removeItem(`answers:${testId}`);
+      localStorage.removeItem(`draft:${testId}`);
+      go(`submitted/${data.submission.id}`);
+    } catch (err) {
+      setLoadError(err.message);
+      setSubmitting(false);
+    }
   };
 
   const questions = test.questions || [];
   return h(React.Fragment, null,
-    h("div", { className: "exam-top" }, h("div", { className: "shell" }, h("div", null, h("strong", null, test.title), h("div", { className: "muted" }, `${test.duration} minute timer`)), h(Timer, { minutes: test.duration, onEnd: submit }))),
+    h("div", { className: "exam-top" }, h("div", { className: "shell" }, h("div", null, h("strong", null, test.title), h("div", { className: "muted" }, `${test.duration} minute timer`)), attempt?.expiresAt && h(Timer, { endsAt: attempt.expiresAt, onEnd: submit }))),
     h("div", { className: "shell" },
       test.type === "reading" && h(ReadingView, { test, questions, answers, setAnswers, index, setIndex }),
       test.type === "listening" && h(ListeningView, { test, questions, answers, setAnswers, index, setIndex }),
@@ -231,12 +296,26 @@ function TestRunner({ testId, go }) {
         questions.length > 0 && h("button", { className: "btn secondary", onClick: () => setIndex(Math.max(0, index - 1)) }, "Previous"),
         questions.length > 0 && h("button", { className: "btn secondary", onClick: () => setIndex(Math.min(questions.length - 1, index + 1)) }, "Next"),
         h("button", { className: "btn ghost", onClick: () => alert("Question flagged for review.") }, "Flag Question"),
-        h("button", { className: "btn", onClick: () => setConfirm(true) }, "Submit")
+        h("button", { className: "btn", onClick: () => setConfirm(true), disabled: submitting }, submitting ? "Submitting..." : "Submit")
       )
     ),
     confirm && h(Modal, { title: "Submit test?", onClose: () => setConfirm(false) },
       h("p", null, "Your answers will be submitted and the timer will stop."),
-      h("div", { className: "actions" }, h("button", { className: "btn secondary", onClick: () => setConfirm(false) }, "Keep Working"), h("button", { className: "btn", onClick: submit }, "Final Submit"))
+      h("div", { className: "actions" }, h("button", { className: "btn secondary", onClick: () => setConfirm(false), disabled: submitting }, "Keep Working"), h("button", { className: "btn", onClick: submit, disabled: submitting }, submitting ? "Submitting..." : "Final Submit"))
+    )
+  );
+}
+
+function SubmissionConfirmation({ go }) {
+  return h("div", { className: "shell" },
+    h("div", { className: "card", style: { maxWidth: 640, margin: "0 auto" } },
+      h("h2", null, "Submission received"),
+      h("p", null, "Your test has been submitted successfully."),
+      h("p", { className: "muted" }, "Results are not shown immediately after submission."),
+      h("div", { className: "actions", style: { marginTop: 18 } },
+        h("button", { type: "button", className: "btn", onClick: () => go("dashboard") }, "Go to Dashboard"),
+        h("button", { type: "button", className: "btn secondary", onClick: () => go("tests") }, "Back to Tests")
+      )
     )
   );
 }
@@ -325,15 +404,29 @@ function ObjectiveScoreEditor({ submission, onSaved }) {
   );
 }
 
-function ResultDetail({ id }) {
+function SubmissionEssay({ title, text }) {
+  if (!text) return null;
+  return h("div", { className: "card", style: { marginTop: 18 } },
+    h("h3", null, title),
+    h("p", { style: { whiteSpace: "pre-wrap" } }, text)
+  );
+}
+
+function ResultDetail({ id, me }) {
   const [data, setData] = useState(null);
   useEffect(() => { api(`/api/results/${id}`).then(setData); }, [id]);
   if (!data) return h("div", { className: "shell" }, "Loading result...");
   const s = data.submission;
+  const isStaff = ["super_admin", "admin", "grader"].includes(me?.role);
   return h("div", { className: "shell" },
     h("h2", null, "Result Summary"),
     h("div", { className: "grid cards" }, metric("Total Score", s.score ?? "Teacher Review"), metric("Estimated IELTS Band", s.estimatedBand ?? "Pending"), metric("Time Spent", `${Math.round((s.timeSpent || 0) / 60)} min`)),
     s.details && h("div", { className: "card", style: { marginTop: 18 } }, h("h3", null, "Answer Review"), s.details.map((d) => h("div", { key: d.questionId, className: "card", style: { marginTop: 10 } }, h("strong", null, `Q${d.number}: ${d.questionText}`), h("p", null, "Your answer: ", d.answer || "-"), h("p", { className: d.correct ? "correct" : "incorrect" }, d.correct ? "Correct" : `Incorrect · Correct answer: ${d.correctAnswer}`), h("p", null, d.explanation)))),
+    isStaff && s.type === "writing" && h(React.Fragment, null,
+      h(SubmissionEssay, { title: "Writing Task 1 Submission", text: s.task1Answer }),
+      h(SubmissionEssay, { title: "Writing Task 2 Submission", text: s.task2Answer })
+    ),
+    isStaff && s.type === "speaking" && s.audioUrl && h("div", { className: "card", style: { marginTop: 18 } }, h("h3", null, "Speaking Recording"), h("audio", { controls: true, src: s.audioUrl, style: { width: "100%" } })),
     ["listening", "reading"].includes(s.type) && h(ObjectiveScoreEditor, { submission: s, onSaved: (submission) => setData({ ...data, submission }) }),
     data.grades?.length > 0 && h("div", { className: "card", style: { marginTop: 18 } }, h("h3", null, "Teacher Feedback"), data.grades.map((g) => h("p", { key: g.id }, `Band ${g.overallBand}: ${g.feedback}`))),
     h("div", { className: "card", style: { marginTop: 18 } }, h("h3", null, "Weak Areas"), h("p", null, "Review incorrect question types and teacher feedback. Example weak areas: Matching headings, True/False/Not Given, task response, pronunciation."))
