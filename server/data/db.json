@@ -1749,7 +1749,9 @@
           "correctAnswer": "temperature",
           "explanation": "Workplace comfort issue."
         }
-      ]
+      ],
+      "startsAt": "2026-05-20T14:10:00+08:00",
+      "endsAt": "2026-05-20T14:50:00+08:00"
     },
     {
       "id": "test_reading_1",
@@ -2359,18 +2361,22 @@
           "correctAnswer": "C. recommending a change of approach in how people view them",
           "explanation": "Richardson says different understandings need to be brought together."
         }
-      ]
+      ],
+      "startsAt": "2026-05-20T15:00:00+08:00",
+      "endsAt": "2026-05-20T16:00:00+08:00"
     },
     {
       "id": "test_writing_1",
       "title": "IELTS Writing Mock 1",
       "type": "writing",
       "duration": 60,
-      "task1": "The line graph shows the percentage of people who used five different communication methods between 1998 and 2008. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-      "task2": "Many manufactured food and drink products contain high levels of sugar, which causes many health problems. Sugary products should be made more expensive to encourage people to consume less sugar. To what extent do you agree or disagree?",
+      "task1": "IELTS Writing Task 1. You should spend 20 minutes on this task. Write at least 150 words.",
+      "task2": "IELTS Writing Task 2. You should spend about 40 minutes on this task. Access to clean water is a basic human right. Therefore, every home should have a water supply that is provided free of charge. To what extent do you agree or disagree?",
       "createdAt": "2026-05-19T02:41:03.851Z",
       "questions": [],
-      "task1Image": "/assets/graph.png"
+      "task1Image": "/assets/graph1.jpg",
+      "startsAt": "2026-05-20T16:10:00+08:00",
+      "endsAt": "2026-05-20T17:10:00+08:00"
     },
     {
       "id": "test_speaking_1",

@@ -12,7 +12,7 @@ const DB_FILE = path.join(DATA_DIR, "db.json");
 const STUDENT_CSV = "/Users/tsogboldbaatar/Desktop/final_exam/exports/student_credentials.csv";
 const PORT = process.env.PORT || 3002;
 const COOKIE = "bandprep_session";
-const EXAM_DATE = process.env.EXAM_DATE || "2026-05-19";
+const EXAM_DATE = process.env.EXAM_DATE || "2026-05-20";
 const EXAM_TZ_OFFSET = process.env.EXAM_TZ_OFFSET || "+08:00";
 const sessions = new Map();
 const loginHits = new Map();
@@ -124,11 +124,29 @@ function bandFromRaw(score) {
 }
 
 function scheduledStatus(test) {
-  return { scheduled: false, available: true };
+  if (!test.startsAt || !test.endsAt) return { scheduled: false, available: true };
+  const current = Date.now();
+  const start = new Date(test.startsAt).getTime();
+  const end = new Date(test.endsAt).getTime();
+  return {
+    scheduled: true,
+    available: current >= start && current < end,
+    notStarted: current < start,
+    ended: current >= end,
+    secondsUntilStart: Math.max(0, Math.ceil((start - current) / 1000)),
+    secondsUntilEnd: Math.max(0, Math.ceil((end - current) / 1000))
+  };
 }
 
 function canBypassSchedule(user) {
-  return true;
+  return ["super_admin", "admin"].includes(user.role) || String(user.className || "").toUpperCase() === "TEST";
+}
+
+function scheduleWindow(startTime, endTime) {
+  return {
+    startsAt: `${EXAM_DATE}T${startTime}:00${EXAM_TZ_OFFSET}`,
+    endsAt: `${EXAM_DATE}T${endTime}:00${EXAM_TZ_OFFSET}`
+  };
 }
 
 function roundIeltsAverage(scores) {
@@ -280,6 +298,7 @@ function sampleTests() {
       title: "IELTS Listening Mock 1",
       type: "listening",
       duration: 40,
+      ...scheduleWindow("14:10", "14:50"),
       audioUrl: "https://practicepteonline.com/wp-content/uploads/audio/203_we.mp3?_=1",
       createdAt: now(),
       sections: [
@@ -336,6 +355,7 @@ function sampleTests() {
       title: "IELTS Reading Mock 1",
       type: "reading",
       duration: 60,
+      ...scheduleWindow("15:00", "16:00"),
       passageTitle: "IELTS Reading Mock 1",
       passage: readingPassageText(),
       createdAt: now(),
@@ -346,6 +366,7 @@ function sampleTests() {
       title: "IELTS Writing Mock 1",
       type: "writing",
       duration: 60,
+      ...scheduleWindow("16:10", "17:10"),
       task1: "The line graph shows the percentage of people who used five different communication methods between 1998 and 2008. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
       task1Image: "/assets/graph.png",
       task2: "Many manufactured food and drink products contain high levels of sugar, which causes many health problems. Sugary products should be made more expensive to encourage people to consume less sugar. To what extent do you agree or disagree?",
